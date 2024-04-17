@@ -1,21 +1,5 @@
 # New Next Project
 
-### Local Development
+Willkommen im Dev-Universum von Nadine! Hier findest du meinen CV und persönliche Einblicke in meine Welt des Codens. Begleite mich auf meiner Entwicklungsreise!
 
-To work locally, please install the dependencies using `npm i` first.
-
-Run `npm run dev` to start a development server and open the displayed URL in a browser.
-
-Use `npm run test` to run the tests.
-
-### Scripts
-
-You can use the following commands:
-
-- `npm run dev` to start a development server
-- `npm run build` to build the project
-- `npm run start` to start a production server
-- `npm run test` to run the tests
-- `npm run lint` to run the linter
-# plantWorld
 # nadinegoesdevuniverse
