@@ -1,7 +1,7 @@
 export default function CV() {
   return (
     <>
-      <p>hier der cv</p>
+      <h2>cv</h2>
       <section>
         <p>Unternehmen</p>
         <p>Beruf</p>
