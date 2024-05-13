@@ -1,6 +1,6 @@
-import Navigation from "../components/navigation";
+import Navigation from "../component/navigation";
 import CV from "../component/cv";
-import css from "styled-jsx/css";
+import styled from "styled-components";
 import AboutMe from "../component/about_me";
 
 export default function Home() {
