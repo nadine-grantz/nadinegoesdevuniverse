@@ -1,14 +1,27 @@
+// _app.js
+import React from "react";
+import { createGlobalStyle } from "styled-components";
 import Navigation from "../component/navigation";
 import CV from "../component/cv";
-import styled from "styled-components";
-import AboutMe from "../component/about_me";
+import AboutMe from "../component/AboutMe";
 
-export default function Home() {
+// Globale Styles
+const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+`;
+
+export default function App({ Component, pageProps }) {
   return (
-    <main>
+    <>
+      <GlobalStyles />
       <Navigation />
       <AboutMe />
       <CV />
-    </main>
+      <Component {...pageProps} />
+    </>
   );
 }

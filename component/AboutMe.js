@@ -1,6 +1,8 @@
+import React from "react";
+
 export default function AboutMe() {
   return (
-    <>
+    <section id="about_me">
       <h2>About Me</h2>
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -21,6 +23,6 @@ export default function AboutMe() {
         dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
         te feugait nulla facilisi. Lorem ipsum dolor sit amet,
       </p>
-    </>
+    </section>
   );
 }

@@ -1,14 +1,14 @@
+// index.js
+import React from "react";
 import Navigation from "../component/navigation";
-import CV from "../component/cv";
-import styled from "styled-components";
-import AboutMe from "../component/about_me";
 
-export default function Home() {
+export default function Homepage() {
   return (
-    <main>
-      <Navigation />
-      <AboutMe />
-      <CV />
-    </main>
+    <>
+      {/* <section id="about">ABOUT</section> */}
+      {/* <section id="projects">PROJECTS</section>
+      <section id="blog">BLOG</section>
+      <section id="contact">CONTACT ME</section> */}
+    </>
   );
 }
