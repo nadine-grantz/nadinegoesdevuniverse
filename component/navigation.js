@@ -5,16 +5,14 @@ import { Link } from "react-scroll";
 const NavContainer = styled.header`
   display: flex;
   align-items: center;
-  position: -webkit-sticky;
+  position: sticky;
   position: sticky;
   top: -5px;
-  z-index: 2;
-  height: 70px;
   min-height: 70px;
-  width: calc(100% - 1.5rem);
   background-color: #fff;
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  justify-content: center;
 `;
 
 const NavActions = styled.nav`
