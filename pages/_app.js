@@ -1,9 +1,10 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import Navigation from "../component/navigation";
-import CV from "../component/cv";
-import AboutMe from "../component/aboutMe";
-import Home from "../component/home";
+import AboutMe from "../component/AboutMe";
+import CV from "../component/Cv";
+import Home from "../component/Home";
+import Navigation from "../component/Navigation";
+import Footer from "../component/Footer";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
       <Home />
       <AboutMe />
       <CV />
+      <Footer />
       <Component {...pageProps} />
     </>
   );
