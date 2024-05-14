@@ -41,19 +41,18 @@ export default function Navigation() {
       <NavContainer>
         <NavActions>
           <NavList>
-            {" "}
             <NavItem>
-              <Link activeClass="active" smooth spy to="header">
-                HEADER
+              <Link offset={-70} activeClass="active" smooth spy to="home">
+                Home
               </Link>
             </NavItem>
             <NavItem>
-              <Link activeClass="active" smooth spy to="about_me">
-                ABOUT ME
+              <Link offset={-70} activeClass="active" smooth spy to="about_me">
+                About me
               </Link>
             </NavItem>
             <NavItem>
-              <Link activeClass="active" smooth spy to="cv">
+              <Link offset={-70} activeClass="active" smooth spy to="cv">
                 CV
               </Link>
             </NavItem>
