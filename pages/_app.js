@@ -4,6 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import Navigation from "../component/navigation";
 import CV from "../component/cv";
 import AboutMe from "../component/AboutMe";
+import Header from "../component/header";
 
 // Globale Styles
 const GlobalStyles = createGlobalStyle`
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
     <>
       <GlobalStyles />
       <Navigation />
+      <Header />
       <AboutMe />
       <CV />
       <Component {...pageProps} />

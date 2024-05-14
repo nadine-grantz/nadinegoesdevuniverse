@@ -43,6 +43,12 @@ export default function Navigation() {
       <NavContainer>
         <NavActions>
           <NavList>
+            {" "}
+            <NavItem>
+              <Link activeClass="active" smooth spy to="header">
+                HEADER
+              </Link>
+            </NavItem>
             <NavItem>
               <Link activeClass="active" smooth spy to="about_me">
                 ABOUT ME
