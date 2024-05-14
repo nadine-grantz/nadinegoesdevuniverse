@@ -35,6 +35,8 @@ const NavItem = styled.li`
   }
 `;
 
+const HEADER_OFFSET = -70;
+
 export default function Navigation() {
   return (
     <>
@@ -42,17 +44,35 @@ export default function Navigation() {
         <NavActions>
           <NavList>
             <NavItem>
-              <Link offset={-70} activeClass="active" smooth spy to="home">
+              <Link
+                offset={HEADER_OFFSET}
+                activeClass="active"
+                smooth
+                spy
+                to="home"
+              >
                 Home
               </Link>
             </NavItem>
             <NavItem>
-              <Link offset={-70} activeClass="active" smooth spy to="about_me">
+              <Link
+                offset={HEADER_OFFSET}
+                activeClass="active"
+                smooth
+                spy
+                to="about_me"
+              >
                 About me
               </Link>
             </NavItem>
             <NavItem>
-              <Link offset={-70} activeClass="active" smooth spy to="cv">
+              <Link
+                offset={HEADER_OFFSET}
+                activeClass="active"
+                smooth
+                spy
+                to="cv"
+              >
                 CV
               </Link>
             </NavItem>
