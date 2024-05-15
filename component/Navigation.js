@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 
 const NavContainer = styled.header`
   display: flex;
-  position: sticky;
   justify-content: center;
+  position: sticky;
   top: 2rem;
   min-height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -13,7 +13,8 @@ const NavContainer = styled.header`
   outline: 0.5rem solid khaki;
   border-radius: 12px;
   font: bold 1rem sans-serif;
-  margin: 2rem;
+  margin: 0px auto;
+  max-width: 700px;
 `;
 
 const NavActions = styled.nav`
