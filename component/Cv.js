@@ -1,35 +1,56 @@
 import React from "react";
+import styled from "styled-components";
+
+const SectionContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const StyledHeader = styled.h2`
+  text-align: center;
+`;
+
+const StyledText = styled.p`
+  text-align: center;
+  margin: 2rem;
+`;
+
+const StyledDiv = styled.div`
+  text-align: center;
+  margin: 2rem;
+`;
 
 export default function CV() {
   return (
-    <section id="cv">
-      <h2>CV</h2>
-      <p>Unternehmen</p>
-      <p>Beruf</p>
-      <p>Jan. 2020 - Sep. 2023</p>
-      <div>
+    <SectionContainer id="cv">
+      <StyledHeader>CV</StyledHeader>
+      <StyledText>Unternehmen</StyledText>
+      <StyledText>Beruf</StyledText>
+      <StyledText>Jan. 2020 - Sep. 2023</StyledText>
+      <StyledDiv>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat
-      </div>
-      <div>
+      </StyledDiv>
+      <StyledDiv>
         Stet clita kasd gbergren, no sea takimata sanctus est Lorem ipsum dolor
         sit amet.
-      </div>
-      <div>
+      </StyledDiv>
+      <StyledDiv>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore
-      </div>
-      <p>Firma</p>
-      <p>Beruf</p>
-      <p>Jan. 2017 - Dez. 2019</p>
-      <div>
+      </StyledDiv>
+      <StyledText>Firma</StyledText>
+      <StyledText>Beruf</StyledText>
+      <StyledText>Jan. 2017 - Dez. 2019</StyledText>
+      <StyledDiv>
         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
         sit amet
-      </div>
-      <div>
+      </StyledDiv>
+      <StyledDiv>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat
-      </div>
-    </section>
+      </StyledDiv>
+    </SectionContainer>
   );
 }

@@ -1,10 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+
+const SectionContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const StyledHeader = styled.h2`
+  text-align: center;
+`;
+
+const StyledText = styled.p`
+  text-align: center;
+  margin: 2rem;
+`;
 
 export default function AboutMe() {
   return (
-    <section id="about_me">
-      <h2>About Me</h2>
-      <p>
+    <SectionContainer id="about_me">
+      <StyledHeader>About Me</StyledHeader>
+      <StyledText>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -22,7 +38,7 @@ export default function AboutMe() {
         eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
         dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
         te feugait nulla facilisi. Lorem ipsum dolor sit amet,
-      </p>
-    </section>
+      </StyledText>
+    </SectionContainer>
   );
 }

@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const SectionContainer = styled.section`
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
 `;
@@ -14,6 +13,7 @@ const StyledHeader = styled.h1`
 
 const StyledText = styled.p`
   text-align: center;
+  margin: 2rem;
 `;
 
 export default function Home() {
