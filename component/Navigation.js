@@ -6,14 +6,14 @@ const NavContainer = styled.header`
   display: flex;
   justify-content: center;
   position: sticky;
-  top: 2rem;
+  top: 1rem;
   min-height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
   border: 0.5rem outset pink;
   outline: 0.5rem solid khaki;
   border-radius: 12px;
   font: bold 1rem sans-serif;
-  margin: 0px auto;
+  margin: 20px auto;
   max-width: 700px;
 `;
 
