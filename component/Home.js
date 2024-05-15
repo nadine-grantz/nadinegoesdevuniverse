@@ -1,10 +1,28 @@
 import React from "react";
+import styled from "styled-components";
+
+const SectionContainer = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const StyledHeader = styled.h1`
+  text-align: center;
+`;
+
+const StyledText = styled.p`
+  text-align: center;
+`;
 
 export default function Home() {
   return (
-    <section id="home">
-      <h1>Welcome to my Website </h1>
-      <p>As you can see, the website is not ready, still working on it</p>
-    </section>
+    <SectionContainer id="home">
+      <StyledHeader>Welcome to my Website </StyledHeader>
+      <StyledText>
+        As you can see, the website is not ready, still working on it
+      </StyledText>
+    </SectionContainer>
   );
 }
