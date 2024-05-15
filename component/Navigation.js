@@ -6,13 +6,16 @@ const NavContainer = styled.header`
   display: flex;
   align-items: center;
   position: sticky;
-  position: sticky;
   top: -5px;
   min-height: 70px;
   background-color: #fff;
-  padding: 0 1rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
   justify-content: center;
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  outline-offset: 0.5rem;
 `;
 
 const NavActions = styled.nav`
