@@ -19,6 +19,7 @@ const StyledText = styled.p`
 
 const StyledLink = styled(Link)`
   text-align: center;
+  margin: 1rem;
 `;
 
 export default function Home() {
