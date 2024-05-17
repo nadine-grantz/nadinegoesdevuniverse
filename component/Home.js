@@ -19,14 +19,14 @@ const StyledText = styled.p`
 
 const LinksContainer = styled.div`
   display: flex;
-  flex-direction: row; /* Horizontale Anordnung der Links */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 1rem;
 `;
 
 const StyledLink = styled(Link)`
-  margin: 0 1rem; /* Abstand zwischen den Links */
+  margin: 0 1rem;
 `;
 
 const StyledImg = styled.img`
