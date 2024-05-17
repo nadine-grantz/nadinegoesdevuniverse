@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 const StyledHeader = styled.h1`
@@ -13,16 +15,20 @@ const StyledHeader = styled.h1`
 
 const StyledText = styled.p`
   text-align: center;
-  margin: 2rem;
+`;
+
+const StyledLink = styled(Link)`
+  text-align: center;
 `;
 
 export default function Home() {
   return (
     <SectionContainer id="home">
-      <StyledHeader>Welcome to my Website </StyledHeader>
+      <StyledHeader>Welcome to my Website</StyledHeader>
       <StyledText>
         As you can see, the website is not ready, still working on it
       </StyledText>
+      <StyledLink href="https://github.com/nadine-grantz">github</StyledLink>
     </SectionContainer>
   );
 }

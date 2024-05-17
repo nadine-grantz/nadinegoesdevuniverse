@@ -37,7 +37,7 @@ const NavItem = styled.li`
   }
 `;
 
-const HEADER_OFFSET = -70;
+const HEADER_OFFSET = -100;
 
 export default function Navigation() {
   return (
