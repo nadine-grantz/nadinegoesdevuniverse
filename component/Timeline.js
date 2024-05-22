@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { SantanderIcon } from "../icons/santander";
 
 const Section = styled.section`
   #cv {
@@ -13,11 +14,11 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: 2.25rem; /* entspricht text-4xl */
+  font-size: 2.25rem; /* text-4xl */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem; /* entspricht mt-8 */
+  margin-top: 2rem; /* mt-8 */
 `;
 
 const Container = styled.div`
@@ -26,45 +27,46 @@ const Container = styled.div`
 `;
 
 const StyledDate = styled.div`
-  margin: 0 1rem; /* entspricht mx-4 */
+  margin: 0 1rem; /* mx-4 */
 `;
 
 const timelineItems = [
   {
     date: "Januar 2011 - Oct. 2021",
-    title: "Jobtitle",
+    title: "Banker",
     location: "Hamburg",
   },
   {
     date: "Januar 2011 - Oct. 2021",
-    title: "Jobtitle",
+    title: "Banker",
     location: "Hamburg",
   },
   {
     date: "Januar 2011 - Oct. 2021",
-    title: "Jobtitle",
+    title: "Student",
     location: "Hamburg",
   },
   {
     date: "Januar 2011 - Oct. 2021",
-    title: "Jobtitle",
+    title: "Student",
     location: "Hamburg",
     content: "Hier der Content",
   },
 ];
 
 const icons = [
-  <img
-    src="https://www.santander.de/ressourcen/img/svg/santander-logo-2018.svg"
-    alt="Santander Logo"
-  />,
+  //   <img
+  //     src="https://www.santander.de/ressourcen/img/svg/santander-logo-2018.svg"
+  //     alt="Santander Logo"
+  //   />,
+  <SantanderIcon />,
   <img
     src="https://www.targobank.de/de/amc-content/svg/assets/icon-tab.svg"
     alt="Targobank Logo"
   />,
 ];
 
-const color = "#00ffe2";
+const color = "green";
 
 export default function Timeline() {
   return (
@@ -83,12 +85,12 @@ export default function Timeline() {
               contentArrowStyle={{ borderRight: "7px solid #3498db" }}
               iconStyle={{
                 background: "transparent",
-                color: "#3498db",
-                border: "2px solid #3498db",
+                color: "yellow",
+                border: "2px solid green",
                 padding: "16px",
                 marginRight: "4px",
               }}
-              icon={icons[index % icons.length]}
+              icon={icons[index]}
             >
               <h3 className="vertical-timeline-element-title">{item.title}</h3>
               <h4 className="vertical-timeline-element-subtitle">
