@@ -5,6 +5,7 @@ import CV from "../component/Cv";
 import Home from "../component/Home";
 import Navigation from "../component/Navigation";
 import Footer from "../component/Footer";
+import Timeline from "../component/Timeline";
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -21,7 +22,8 @@ export default function App({ Component, pageProps }) {
       <Navigation />
       <Home />
       <AboutMe />
-      <CV />
+      {/* <CV /> */}
+      <Timeline />
       <Footer />
       <Component {...pageProps} />
     </>

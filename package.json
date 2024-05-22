@@ -19,6 +19,7 @@
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.23.0",
     "react-scroll": "^1.9.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.0.2",
     "use-local-storage-state": "^19.2.0"
   },
