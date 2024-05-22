@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { GithubIcon } from "../icons/github";
+import { LinkedinIcon } from "../icons/linkedin";
 
 const SectionContainer = styled.section`
   display: flex;
@@ -47,10 +48,7 @@ export default function Home() {
           <GithubIcon />
         </StyledLink>
         <StyledLink href="https://www.linkedin.com/in/nadine-grantz-36a03a1ba/">
-          <StyledImg
-            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-            alt="LinkedIn Logo"
-          />
+          <LinkedinIcon />
         </StyledLink>
       </LinksContainer>
     </SectionContainer>
