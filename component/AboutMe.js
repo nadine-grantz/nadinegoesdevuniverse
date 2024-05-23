@@ -24,12 +24,16 @@ export default function AboutMe() {
         <p>
           Hallo zusammen! 👋 Ich schlage ein neues, aufregendes Kapitel auf,
           indem ich nach mehreren Jahren im Vertrieb im Bankensektor nun
-          kopfüber in die Welt der Webentwicklung eintauche. Hintergrund: Ich
-          habe mehrere Jahre im Vertrieb bei verschiedenen Banken gearbeitet und
-          konnte dabei viele Erfahrungen in verschiedenen Kundenbereichen
-          sammeln. Außerdem habe ich eine Ausbildung zum Betriebswirt gemacht,
-          um komplexe betriebswirtschaftliche Konzepte zu verstehen.
+          kopfüber in die Welt der Webentwicklung eintauche.
         </p>
+        <p>
+          Hintergrund: Ich habe mehrere Jahre im Vertrieb bei verschiedenen
+          Banken gearbeitet und konnte dabei viele Erfahrungen in verschiedenen
+          Kundenbereichen sammeln. Außerdem habe ich eine Weiterbildung zur
+          geprüften Wirtschaftsfachwirtin absolviert, um komplexe
+          betriebswirtschaftliche Konzepte zu verstehen.
+        </p>
+
         <p>
           Interessen: Neben dem Programmieren reise ich gerne und lasse mich von
           neuen Kulturen und Erfahrungen inspirieren. Außerdem habe ich einen
@@ -40,10 +44,9 @@ export default function AboutMe() {
         <p>
           Aktueller Fokus: Jeden Tag arbeite ich daran, meine Fähigkeiten in
           HTML, CSS und JavaScript zu verbessern und die endlosen Möglichkeiten
-          der Webentwicklung zu erkunden. Fazit: Begleiten Sie mich auf dieser
-          Reise des Wachstums und der Entdeckung, bei der jede Herausforderung
-          eine Chance ist und jede Zeile Code mich der Verwirklichung meiner
-          Träume näher bringt. 🌱💻
+          der Webentwicklung zu erkunden. Fazit: Begleite mich auf dieser Reise
+          des Wachstums und der Entdeckung, bei der jede Herausforderung eine
+          Chance ist. 🌱💻
         </p>
       </StyledText>
     </SectionContainer>
