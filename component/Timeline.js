@@ -16,7 +16,6 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  //   font-size: 2.25rem; /* text-4xl */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +31,13 @@ const StyledDate = styled.div`
   margin: 0 1rem; /* mx-4 */
 `;
 
+const CompanyLocation = styled.h4`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+`;
+
 const timelineItems = [
   {
     date: "since Mar. 2024",
@@ -39,28 +45,32 @@ const timelineItems = [
     location: "remote",
   },
   {
-    date: "Nov. 2013 - Mar. 2024",
+    date: "Nov. 2023 - Mar. 2024",
     title: "Trainee Web Development",
+    company: "NeueFische",
     location: "remote",
     content: "Bootcamp in Bereich Web Development",
   },
   {
     date: "Aug 2019 - Feb. 2021",
     title: "Geprüfte Wirtschaftsfachwirtin",
+    company: "HKBiS, Handelskammer Hamburg",
     location: "Hamburg",
     content:
       "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und ZusammenarbeitInvestition, Finanzierung, betriebliches Rechnungswesen, Controlling",
   },
   {
-    date: "Januar 2020 - Sep. 2023",
+    date: "Jan. 2020 - Sep. 2023",
     title: "Privatkundenberaterin",
+    company: "Santander",
     location: "Hamburg Altona",
     content:
       " Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags eigenständige Organistation zur Erreichung vertrieblicher Zielen",
   },
   {
-    date: "Januar 2017 - Dez. 2019",
+    date: "Jan. 2017 - Dec. 2019",
     title: "Privatkundenberaterin",
+    company: "Santander",
     location: "Hamburg Altona und Dammtor",
     content:
       "Beratungstätigkeit in den Bereichen Investment, Kredit, Konten und Kreditkarten",
@@ -68,8 +78,9 @@ const timelineItems = [
   {
     date: "Aug 2014 - Jan. 2017",
     title: "Ausbildung Bankkauffrau",
+    company: "Santander",
     location: "Hamburg Dammtor",
-    content: "Ausbildung zur Bankkauffrau bei der Santander Bank",
+    content: "Ausbildung zur Bankkaufrau bei der Santander Bank",
   },
 ];
 
@@ -98,7 +109,7 @@ export default function Timeline() {
                 background: index % 2 === 0 ? color : "white",
                 color: "black",
               }}
-              contentArrowStyle={{ borderRight: "7px solid #3498db" }}
+              contentArrowStyle={{ borderRight: "7px solid #81ACCF" }}
               iconStyle={{
                 background: "transparent",
                 color: "black",
@@ -109,9 +120,9 @@ export default function Timeline() {
               icon={icons[index]}
             >
               <h3 className="vertical-timeline-element-title">{item.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {item.location}
-              </h4>
+              <CompanyLocation>
+                <span>{(item.location, item.company)}</span>
+              </CompanyLocation>
               <p>{item.content}</p>
             </VerticalTimelineElement>
           ))}
