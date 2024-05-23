@@ -6,6 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { SantanderIcon } from "../icons/santander";
+import { NeueFischeIcon } from "../icons/neuefische";
+import { IHKIcon } from "../icons/ihk";
 
 const Section = styled.section`
   #cv {
@@ -32,41 +34,54 @@ const StyledDate = styled.div`
 
 const timelineItems = [
   {
-    date: "Januar 2011 - Oct. 2021",
-    title: "Banker",
-    location: "Hamburg",
+    date: "since Mar. 2024",
+    title: "self learning",
+    location: "remote",
   },
   {
-    date: "Januar 2011 - Oct. 2021",
-    title: "Banker",
-    location: "Hamburg",
+    date: "Nov. 2013 - Mar. 2024",
+    title: "Trainee Web Development",
+    location: "remote",
   },
   {
-    date: "Januar 2011 - Oct. 2021",
-    title: "Student",
+    date: "Aug 2019 - Feb. 2021",
+    title: "Geprüfte Wirtschaftsfachwirtin",
     location: "Hamburg",
+    content:
+      "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und ZusammenarbeitInvestition, Finanzierung, betriebliches Rechnungswesen, Controlling",
   },
   {
-    date: "Januar 2011 - Oct. 2021",
-    title: "Student",
-    location: "Hamburg",
-    content: "Hier der Content",
+    date: "Januar 2020 - Sep. 2023",
+    title: "Privatkundenberaterin",
+    location: "Hamburg Altona",
+    content:
+      " Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags eigenständige Organistation zur Erreichung vertrieblicher Zielen",
+  },
+  {
+    date: "Januar 2017 - Dez. 2019",
+    title: "Privatkundenberaterin",
+    location: "Hamburg Altona und Dammtor",
+    content:
+      "Beratungstätigkeit in den Bereichen Investment, Kredit, Konten und Kreditkarten",
+  },
+  {
+    date: "Aug 2014 - Jan. 2017",
+    title: "Ausbildung Bankkauffrau",
+    location: "Hamburg Dammtor",
+    content: "Ausbildung zur Bankkauffrau bei der Santander Bank",
   },
 ];
 
 const icons = [
-  //   <img
-  //     src="https://www.santander.de/ressourcen/img/svg/santander-logo-2018.svg"
-  //     alt="Santander Logo"
-  //   />,
   <SantanderIcon />,
-  <img
-    src="https://www.targobank.de/de/amc-content/svg/assets/icon-tab.svg"
-    alt="Targobank Logo"
-  />,
+  <NeueFischeIcon />,
+  <IHKIcon />,
+  <SantanderIcon />,
+  <SantanderIcon />,
+  <SantanderIcon />,
 ];
 
-const color = "green";
+const color = "light grey";
 
 export default function Timeline() {
   return (
