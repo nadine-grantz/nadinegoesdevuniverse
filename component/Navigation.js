@@ -13,7 +13,7 @@ const NavContainer = styled.header`
   outline: 0.5rem solid #bfd5e7;
   border-radius: 50px;
   font: bold 1rem sans-serif;
-  margin: 1rem auto;
+  margin: 4rem;
   max-width: 700px;
   z-index: 1;
 `;

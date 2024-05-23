@@ -1,7 +1,6 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import AboutMe from "../component/AboutMe";
-import CV from "../component/Cv";
 import Home from "../component/Home";
 import Navigation from "../component/Navigation";
 import Footer from "../component/Footer";
@@ -12,6 +11,8 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 100%);
   }
 `;
 
@@ -22,7 +23,6 @@ export default function App({ Component, pageProps }) {
       <Navigation />
       <Home />
       <AboutMe />
-      {/* <CV /> */}
       <Timeline />
       <Footer />
       <Component {...pageProps} />

@@ -13,6 +13,7 @@ const StyledHeader = styled.h2`
 
 const StyledText = styled.div`
   text-align: center;
+  margin: 2rem;
 `;
 
 export default function AboutMe() {

@@ -62,7 +62,7 @@ const timelineItems = [
   {
     date: "Jan. 2020 - Sep. 2023",
     title: "Privatkundenberaterin",
-    company: "Santander",
+    company: "Targobank",
     location: "Hamburg Altona",
     content:
       " Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags eigenständige Organistation zur Erreichung vertrieblicher Zielen",
@@ -95,10 +95,12 @@ const icons = [
 
 const color = "#81ACCF";
 
+const HEADER_OFFSET = -100;
+
 export default function Timeline() {
   return (
     <Section id="cv">
-      <Title>Timeline</Title>
+      <Title offset={HEADER_OFFSET}>Timeline</Title>
       <Container>
         <VerticalTimeline>
           {timelineItems.map((item, index) => (
@@ -111,7 +113,7 @@ export default function Timeline() {
               }}
               contentArrowStyle={{ borderRight: "7px solid #81ACCF" }}
               iconStyle={{
-                background: "transparent",
+                background: "white",
                 color: "black",
                 border: "2px solid #81ACCF",
                 padding: "16px",
