@@ -42,6 +42,7 @@ const timelineItems = [
     date: "Nov. 2013 - Mar. 2024",
     title: "Trainee Web Development",
     location: "remote",
+    content: "Bootcamp in Bereich Web Development",
   },
   {
     date: "Aug 2019 - Feb. 2021",
