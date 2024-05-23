@@ -11,9 +11,8 @@ const StyledHeader = styled.h2`
   text-align: center;
 `;
 
-const StyledText = styled.p`
+const StyledText = styled.div`
   text-align: center;
-  margin: 2rem;
 `;
 
 export default function AboutMe() {
@@ -21,23 +20,30 @@ export default function AboutMe() {
     <SectionContainer id="about_me">
       <StyledHeader>About Me</StyledHeader>
       <StyledText>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in
-        hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
-        te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+        <p>
+          Hallo zusammen! 👋 Ich schlage ein neues, aufregendes Kapitel auf,
+          indem ich nach mehreren Jahren im Vertrieb im Bankensektor nun
+          kopfüber in die Welt der Webentwicklung eintauche. Hintergrund: Ich
+          habe mehrere Jahre im Vertrieb bei verschiedenen Banken gearbeitet und
+          konnte dabei viele Erfahrungen in verschiedenen Kundenbereichen
+          sammeln. Außerdem habe ich eine Ausbildung zum Betriebswirt gemacht,
+          um komplexe betriebswirtschaftliche Konzepte zu verstehen.
+        </p>
+        <p>
+          Interessen: Neben dem Programmieren reise ich gerne und lasse mich von
+          neuen Kulturen und Erfahrungen inspirieren. Außerdem habe ich einen
+          grünen Daumen und finde Freude an der Pflege von Pflanzen -
+          Rückschläge inbegriffen, denn es gibt nichts Schöneres, als neues
+          Wachstum zu beobachten.
+        </p>
+        <p>
+          Aktueller Fokus: Jeden Tag arbeite ich daran, meine Fähigkeiten in
+          HTML, CSS und JavaScript zu verbessern und die endlosen Möglichkeiten
+          der Webentwicklung zu erkunden. Fazit: Begleiten Sie mich auf dieser
+          Reise des Wachstums und der Entdeckung, bei der jede Herausforderung
+          eine Chance ist und jede Zeile Code mich der Verwirklichung meiner
+          Träume näher bringt. 🌱💻
+        </p>
       </StyledText>
     </SectionContainer>
   );
