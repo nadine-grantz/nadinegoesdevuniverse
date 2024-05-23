@@ -9,12 +9,13 @@ const NavContainer = styled.header`
   top: 1rem;
   min-height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.5rem outset pink;
+  border: 0.5rem outset grey;
   outline: 0.5rem solid khaki;
-  border-radius: 12px;
+  border-radius: 50px;
   font: bold 1rem sans-serif;
   margin: 20px auto;
   max-width: 700px;
+  z-index: 1;
 `;
 
 const NavActions = styled.nav`

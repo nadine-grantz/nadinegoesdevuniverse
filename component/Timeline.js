@@ -16,7 +16,7 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: 2.25rem; /* text-4xl */
+  //   font-size: 2.25rem; /* text-4xl */
   display: flex;
   align-items: center;
   justify-content: center;

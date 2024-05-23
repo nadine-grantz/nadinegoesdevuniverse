@@ -41,7 +41,8 @@ export default function Home() {
     <SectionContainer id="home">
       <StyledHeader>Welcome to my Website</StyledHeader>
       <StyledText>
-        As you can see, the website is not ready, still working on it
+        Willkommen auf meiner Website, wie du siehst ist sie noch nicht fertig,
+        man darf gespannt sein
       </StyledText>
       <LinksContainer>
         <StyledLink href="https://github.com/nadine-grantz">
