@@ -82,7 +82,7 @@ const icons = [
   <SantanderIcon />,
 ];
 
-const color = "light grey";
+const color = "#81ACCF";
 
 export default function Timeline() {
   return (
@@ -101,8 +101,8 @@ export default function Timeline() {
               contentArrowStyle={{ borderRight: "7px solid #3498db" }}
               iconStyle={{
                 background: "transparent",
-                color: "yellow",
-                border: "2px solid green",
+                color: "black",
+                border: "2px solid #81ACCF",
                 padding: "16px",
                 marginRight: "4px",
               }}

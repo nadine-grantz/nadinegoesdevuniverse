@@ -9,11 +9,11 @@ const NavContainer = styled.header`
   top: 1rem;
   min-height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.5rem outset grey;
-  outline: 0.5rem solid khaki;
+  border: 0.5rem outset #81accf;
+  outline: 0.5rem solid #bfd5e7;
   border-radius: 50px;
   font: bold 1rem sans-serif;
-  margin: 20px auto;
+  margin: 1rem auto;
   max-width: 700px;
   z-index: 1;
 `;
