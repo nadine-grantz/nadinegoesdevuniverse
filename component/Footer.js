@@ -1,10 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+
+const SectionContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default function Footer() {
   return (
-    <>
-      <p>Build in 2024 by Nadine</p>
-      <p>Find more Information about me in the Links above</p>
-    </>
+    <SectionContainer>
+      <p>Built in 2024 by Nadine</p>
+      <p>Find more information about me in the links above</p>
+    </SectionContainer>
   );
 }
