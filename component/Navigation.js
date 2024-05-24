@@ -14,7 +14,7 @@ const NavContainer = styled.header`
   font: bold 1rem sans-serif;
   z-index: 1;
   margin: auto;
-  width: 400px;
+  width: max;
 `;
 
 const NavActions = styled.nav`
