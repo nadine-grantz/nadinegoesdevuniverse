@@ -13,6 +13,7 @@ const SectionContainer = styled.section`
 
 const StyledHeader = styled.h1`
   text-align: center;
+  padding: 2rem;
 `;
 
 const StyledText = styled.p`

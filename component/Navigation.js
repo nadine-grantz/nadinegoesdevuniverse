@@ -7,15 +7,14 @@ const NavContainer = styled.header`
   justify-content: center;
   position: sticky;
   top: 1rem;
-  min-height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
   border: 0.5rem outset #81accf;
   outline: 0.5rem solid #bfd5e7;
   border-radius: 50px;
   font: bold 1rem sans-serif;
-  margin: 4rem;
-  max-width: 700px;
   z-index: 1;
+  margin: auto;
+  width: 400px;
 `;
 
 const NavActions = styled.nav`
