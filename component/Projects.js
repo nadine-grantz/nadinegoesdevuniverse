@@ -10,7 +10,7 @@ const SectionContainer = styled.section`
 
 const StyledHeader = styled.h1`
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 `;
 export default function Home() {
   return (
