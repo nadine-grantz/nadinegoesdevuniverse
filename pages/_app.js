@@ -5,12 +5,13 @@ import Home from "../component/Home";
 import Navigation from "../component/Navigation";
 import Footer from "../component/Footer";
 import Timeline from "../component/Timeline";
+import Projects from "../component/Projects";
 
 const GlobalStyles = createGlobalStyle`
  #__next {
   width: fit-content;
  }
- 
+
   body {
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }) {
       <Navigation />
       <Home />
       <AboutMe />
+      <Projects />
       <Timeline />
       <Footer />
       <Component {...pageProps} />

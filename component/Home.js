@@ -18,6 +18,7 @@ const StyledHeader = styled.h1`
 
 const StyledText = styled.p`
   text-align: center;
+  margin: 1rem;
 `;
 
 const LinksContainer = styled.div`

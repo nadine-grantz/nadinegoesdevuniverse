@@ -73,6 +73,17 @@ export default function Navigation() {
                 activeClass="active"
                 smooth
                 spy
+                to="projects"
+              >
+                Projects
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link
+                offset={HEADER_OFFSET}
+                activeClass="active"
+                smooth
+                spy
                 to="cv"
               >
                 CV
