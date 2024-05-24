@@ -7,6 +7,10 @@ import Footer from "../component/Footer";
 import Timeline from "../component/Timeline";
 
 const GlobalStyles = createGlobalStyle`
+ #__next {
+  width: fit-content;
+ }
+ 
   body {
     margin: 0;
     padding: 0;
