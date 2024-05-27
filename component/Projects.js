@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import plantWorldPicture from "../icons/plant-World-picture.png";
 
 const SectionContainer = styled.section`
   display: flex;
@@ -31,7 +32,6 @@ const ProjectContainer = styled.div`
   padding: 1rem;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 28rem;
 `;
 
@@ -63,7 +63,7 @@ const ProjectDescription = styled.div`
   padding: 1rem;
 `;
 
-const ProjectFrameworks = styled.span`
+const ProjectFrameworks = styled.div`
   display: block;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -80,7 +80,7 @@ export default function Home() {
           <ContentWrapper>
             <Link href="https://plant-world-flame.vercel.app/">
               <StyledImage
-                src="https://www.cambridgebee.com/cdn/shop/articles/tillandsia_selection_display_2_1024x.png?v=1682037202"
+                src={plantWorldPicture}
                 alt="Beispielbild von Pflanzen in Wohnung"
               />
             </Link>
@@ -102,8 +102,11 @@ export default function Home() {
         <ProjectContainer>
           <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
-            <Link href="https://example.com">
-              <StyledImage src="https:" alt="Beispielbild der Finanz App" />
+            <Link href="https://beispiel.com">
+              <StyledImage
+                src="https://beispiel.com/"
+                alt="Beispielbild der Finanz App"
+              />
             </Link>
             <ProjectDescription>
               Entdecke unsere intuitive Finanz-App für eine mühelose Verfolgung
