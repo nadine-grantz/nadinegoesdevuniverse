@@ -35,7 +35,7 @@ const ProjectContainer = styled.div`
   max-width: 28rem;
 `;
 
-const Title = styled.h3`
+const ProjectTitle = styled.h3`
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -58,12 +58,12 @@ const StyledImage = styled.img`
   margin-right: 1rem;
 `;
 
-const Description = styled.div`
+const ProjectDescription = styled.div`
   max-width: 15rem;
   padding: 1rem;
 `;
 
-const Highlights = styled.span`
+const ProjectFrameworks = styled.span`
   display: block;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -76,7 +76,7 @@ export default function Home() {
       <StyledHeader>Projects</StyledHeader>
       <ProjectsWrapper>
         <ProjectContainer>
-          <Title>plant-World</Title>
+          <ProjectTitle>plant-World</ProjectTitle>
           <ContentWrapper>
             <Link href="https://plant-world-flame.vercel.app/">
               <StyledImage
@@ -84,7 +84,7 @@ export default function Home() {
                 alt="Beispielbild von Pflanzen in Wohnung"
               />
             </Link>
-            <Description>
+            <ProjectDescription>
               Die App ist der ideale Begleiter für neue und erfahrene
               Pflanzenliebhaber. Sie bietet Pflegetipps für viele Pflanzen in
               deiner Sammlung. Benutzer können ihre eigenen Pflanzen hinzufügen.
@@ -92,28 +92,30 @@ export default function Home() {
               über die Pflanzenpflege zu behalten. Mit dieser App wird dein
               Zuhause zum grünen Paradies! Die App ist noch im Aufbau,
               schließlich gibt es immer etwas zu verbessern.
-            </Description>
+            </ProjectDescription>
           </ContentWrapper>
-          <Highlights>React / Next.js / Styled Components</Highlights>
+          <ProjectFrameworks>
+            React / Next.js / Styled Components
+          </ProjectFrameworks>
         </ProjectContainer>
 
         <ProjectContainer>
-          <Title>Budget Buddy</Title>
+          <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
             <Link href="https://example.com">
               <StyledImage src="https:" alt="Beispielbild der Finanz App" />
             </Link>
-            <Description>
+            <ProjectDescription>
               Entdecke unsere intuitive Finanz-App für eine mühelose Verfolgung
               deiner Einnahmen und Ausgaben. Setze dir Sparziele und beobachte,
               wie du sie erreichst! Ideal auch für junge Menschen, um ihre
               Finanzplanung zu beginnen und ein solides Fundament aufzubauen.
-            </Description>
+            </ProjectDescription>
           </ContentWrapper>
-          <Highlights>
+          <ProjectFrameworks>
             React / Next.js / Styled Components / Node.js / MongoDB Atlas /
             Mongoose / useSWR / Chart.js
-          </Highlights>
+          </ProjectFrameworks>
         </ProjectContainer>
       </ProjectsWrapper>
     </SectionContainer>
