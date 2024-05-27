@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
-import plantWorldPicture from "../icons/plant-World-picture.png";
+import plantWorldPicture from "../assets/plantWorldPicture.png";
 
 const SectionContainer = styled.section`
   display: flex;
@@ -80,7 +80,7 @@ export default function Home() {
           <ContentWrapper>
             <Link href="https://plant-world-flame.vercel.app/">
               <StyledImage
-                src={plantWorldPicture}
+                src={plantWorldPicture.src}
                 alt="Beispielbild von Pflanzen in Wohnung"
               />
             </Link>
@@ -102,7 +102,7 @@ export default function Home() {
         <ProjectContainer>
           <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
-            <Link href="https://beispiel.com">
+            <Link href="https://github.com/nadine-grantz/capstone-project_budget-buddy">
               <StyledImage
                 src="https://beispiel.com/"
                 alt="Beispielbild der Finanz App"
