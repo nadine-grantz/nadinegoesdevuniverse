@@ -9,12 +9,10 @@ const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 `;
 
 const StyledHeader = styled.h1`
   text-align: center;
-  padding: 1rem;
 `;
 
 const ProjectsWrapper = styled.div`
