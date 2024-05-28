@@ -114,7 +114,7 @@ export default function Home() {
         <ProjectContainer>
           <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
-            <Link href="https://github.com/nadine-grantz/capstone-project_budget-buddy">
+            <Link href="https://capstone-project-budget-buddy.vercel.app/">
               <StyledImage
                 src={budgetBuddy.src}
                 alt="Transaktionen in einer Finanzapp"
