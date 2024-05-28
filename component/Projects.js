@@ -57,6 +57,10 @@ const StyledImage = styled.img`
   background-color: white;
   border-radius: 20%;
   margin-right: 1rem;
+  // object-fit: cover;
+  border: 0.5rem solid rgb(238, 174, 202);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 `;
 
 const DescriptionContainer = styled.div`
@@ -111,8 +115,11 @@ export default function Home() {
           <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
             <Link href="https://github.com/nadine-grantz/capstone-project_budget-buddy">
-              <StyledImage src={budgetBuddy.src} alt="Zimmerpflanzen" />
-            </Link>{" "}
+              <StyledImage
+                src={budgetBuddy.src}
+                alt="Transaktionen in einer Finanzapp"
+              />
+            </Link>
             <DescriptionContainer>
               <ProjectDescription>
                 Entdecke unsere intuitive Finanz-App für eine mühelose
