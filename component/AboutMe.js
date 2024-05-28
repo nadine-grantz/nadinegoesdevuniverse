@@ -13,7 +13,6 @@ const StyledHeader = styled.h2`
 
 const StyledText = styled.div`
   text-align: center;
-  margin: 2rem;
 `;
 
 export default function AboutMe() {
@@ -25,23 +24,19 @@ export default function AboutMe() {
           Hallo zusammen! 👋 Ich schlage ein neues, aufregendes Kapitel auf,
           indem ich nach mehreren Jahren im Vertrieb im Bankensektor nun
           kopfüber in die Welt der Webentwicklung eintauche.
-        </p>
-        <p>
+          <br></br>
           Hintergrund: Ich habe mehrere Jahre im Vertrieb bei verschiedenen
           Banken gearbeitet und konnte dabei viele Erfahrungen in verschiedenen
           Kundenbereichen sammeln. Außerdem habe ich eine Weiterbildung zur
           geprüften Wirtschaftsfachwirtin absolviert, um komplexe
           betriebswirtschaftliche Konzepte zu verstehen.
-        </p>
-
-        <p>
+          <br></br>
           Interessen: Neben dem Programmieren reise ich gerne und lasse mich von
           neuen Kulturen und Erfahrungen inspirieren. Außerdem habe ich einen
           grünen Daumen und finde Freude an der Pflege von Pflanzen -
           Rückschläge inbegriffen, denn es gibt nichts Schöneres, als neues
           Wachstum zu beobachten.
-        </p>
-        <p>
+          <br></br>
           Aktueller Fokus: Jeden Tag arbeite ich daran, meine Fähigkeiten in
           HTML, CSS und JavaScript zu verbessern und die endlosen Möglichkeiten
           der Webentwicklung zu erkunden. Fazit: Begleite mich auf dieser Reise
