@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import plantWorldPicture from "../assets/plantWorldPicture.png";
+import budgetBuddy from "../assets/budgetBuddy.png";
 
 const SectionContainer = styled.section`
   display: flex;
@@ -110,10 +111,7 @@ export default function Home() {
           <ProjectTitle>Budget Buddy</ProjectTitle>
           <ContentWrapper>
             <Link href="https://github.com/nadine-grantz/capstone-project_budget-buddy">
-              <StyledImage
-                src="https://beispiel.com/"
-                alt="Beispielbild der Finanz App"
-              />
+              <StyledImage src={budgetBuddy.src} alt="Zimmerpflanzen" />
             </Link>{" "}
             <DescriptionContainer>
               <ProjectDescription>
