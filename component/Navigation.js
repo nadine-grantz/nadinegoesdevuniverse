@@ -5,6 +5,9 @@ import { Link } from "react-scroll";
 const NavContainer = styled.div`
   display: flex;
   position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   background-color: rgba(255, 255, 255, 0.9);
   border: 0.5rem outset #81accf;
   outline: 0.5rem solid #bfd5e7;
@@ -12,6 +15,7 @@ const NavContainer = styled.div`
   font: bold 1rem sans-serif;
   z-index: 1;
   margin: 1rem;
+  // inset-inline: 50%;
 `;
 
 const NavActions = styled.nav`
