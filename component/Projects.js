@@ -55,7 +55,6 @@ const StyledImage = styled.img`
   background-color: white;
   border-radius: 20%;
   margin-right: 1rem;
-  // object-fit: cover;
   border: 0.5rem solid rgb(238, 174, 202);
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;

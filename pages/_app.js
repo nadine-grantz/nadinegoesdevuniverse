@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
   @media only screen and (max-width: 1169px) {
     .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
       visibility: visible;
-      animation: timeline-slide 0.6s;
+      animation: timeline-slide 0.8s;
     }
   }
 

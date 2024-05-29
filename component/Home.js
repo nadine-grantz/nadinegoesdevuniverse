@@ -9,6 +9,7 @@ const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5em;
 `;
 
 const StyledHeader = styled.h1`
