@@ -64,6 +64,11 @@ const icons = [
   <SantanderIcon />,
 ];
 
+const StyledHeader = styled.h1`
+  text-align: center;
+  padding: 1rem;
+`;
+
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   .vertical-timeline-element-content {
     background: ${(props) => (props.isEven ? "#81ACCF" : "white")};
@@ -88,7 +93,7 @@ const HEADER_OFFSET = -100;
 export default function Timeline() {
   return (
     <section id="cv">
-      <h1 offset={HEADER_OFFSET}>Timeline</h1>
+      <StyledHeader offset={HEADER_OFFSET}>Timeline</StyledHeader>
       <div>
         <VerticalTimeline>
           {timelineItems.map((item, index) => (
