@@ -28,18 +28,8 @@ const GlobalStyles = createGlobalStyle`
       opacity: 0;
       transform: translateY(-50px);
     }
-    60% {
-      transform: translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
-  html, body {
-    overflow-x: hidden;
-  }
+
 `;
 
 export default function App({ Component, pageProps }) {

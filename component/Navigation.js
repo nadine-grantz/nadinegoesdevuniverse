@@ -2,19 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-const NavContainer = styled.header`
+const NavContainer = styled.div`
   display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 1rem;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
   border: 0.5rem outset #81accf;
   outline: 0.5rem solid #bfd5e7;
   border-radius: 50px;
   font: bold 1rem sans-serif;
   z-index: 1;
-  margin: auto;
-  max-width: 400px;
+  margin: 1rem;
 `;
 
 const NavActions = styled.nav`
@@ -41,57 +38,55 @@ const HEADER_OFFSET = -100;
 
 export default function Navigation() {
   return (
-    <>
-      <NavContainer>
-        <NavActions>
-          <NavList>
-            <NavItem>
-              <Link
-                offset={HEADER_OFFSET}
-                activeClass="active"
-                smooth
-                spy
-                to="home"
-              >
-                Home
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                offset={HEADER_OFFSET}
-                activeClass="active"
-                smooth
-                spy
-                to="about_me"
-              >
-                About me
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                offset={HEADER_OFFSET}
-                activeClass="active"
-                smooth
-                spy
-                to="projects"
-              >
-                Projects
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link
-                offset={HEADER_OFFSET}
-                activeClass="active"
-                smooth
-                spy
-                to="cv"
-              >
-                CV
-              </Link>
-            </NavItem>
-          </NavList>
-        </NavActions>
-      </NavContainer>
-    </>
+    <NavContainer>
+      <NavActions>
+        <NavList>
+          <NavItem>
+            <Link
+              offset={HEADER_OFFSET}
+              activeClass="active"
+              smooth
+              spy
+              to="home"
+            >
+              Home
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link
+              offset={HEADER_OFFSET}
+              activeClass="active"
+              smooth
+              spy
+              to="about_me"
+            >
+              About me
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link
+              offset={HEADER_OFFSET}
+              activeClass="active"
+              smooth
+              spy
+              to="projects"
+            >
+              Projects
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link
+              offset={HEADER_OFFSET}
+              activeClass="active"
+              smooth
+              spy
+              to="cv"
+            >
+              CV
+            </Link>
+          </NavItem>
+        </NavList>
+      </NavActions>
+    </NavContainer>
   );
 }
