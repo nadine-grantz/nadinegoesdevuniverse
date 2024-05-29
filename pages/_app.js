@@ -16,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
     background: radial-gradient(circle, rgba(238,174,202,1) 33%, rgba(148,187,233,1) 100%);
   }
 
+  ul {
+    padding-inline-start: 0;
+  }
+
   @media only screen and (max-width: 1169px) {
     .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
       visibility: visible;

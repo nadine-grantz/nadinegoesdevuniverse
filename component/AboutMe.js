@@ -9,7 +9,7 @@ const SectionContainer = styled.section`
 
 const AboutMeContainer = styled.div`
   max-width: 28rem;
-  margin: 0 auto;
+  margin: auto;
 `;
 
 const StyledHeader = styled.h2`
@@ -18,7 +18,6 @@ const StyledHeader = styled.h2`
 
 const StyledText = styled.div`
   text-align: center;
-  padding: 0 1rem;
 `;
 
 export default function AboutMe() {

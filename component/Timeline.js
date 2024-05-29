@@ -66,7 +66,6 @@ const icons = [
 
 const StyledHeader = styled.h1`
   text-align: center;
-  padding: 1rem;
 `;
 
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`

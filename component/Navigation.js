@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 const NavContainer = styled.div`
   display: flex;
   position: fixed;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 50%;
   transform: translate(-50%);
@@ -14,12 +16,13 @@ const NavContainer = styled.div`
   border-radius: 50px;
   font: bold 1rem sans-serif;
   z-index: 1;
-  margin: 1rem;
-  // inset-inline: 50%;
+  margin-top: 1rem;
+  padding: 0 1rem;
 `;
 
 const NavActions = styled.nav`
   display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -28,7 +31,6 @@ const NavList = styled.ul`
   gap: 1rem;
   font-size: 0.9rem;
   list-style: none;
-  padding: 0;
 `;
 
 const NavItem = styled.li`

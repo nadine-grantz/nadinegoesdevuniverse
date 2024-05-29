@@ -9,12 +9,12 @@ const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5em;
+  margin-top: 7em;
 `;
 
 const StyledHeader = styled.h1`
-  text-align: center;
-  padding: 1rem;
+  max-width: 28rem;
+  margin: auto;
 `;
 
 const StyledText = styled.p`
