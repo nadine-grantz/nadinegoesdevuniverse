@@ -9,35 +9,6 @@ import { SantanderIcon } from "../icons/santander";
 import { NeueFischeIcon } from "../icons/neuefische";
 import { IHKIcon } from "../icons/ihk";
 
-const Section = styled.section`
-  #cv {
-    padding: 20px;
-  }
-`;
-
-const Title = styled.h1`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem; /* mt-8 */
-`;
-
-const Container = styled.div`
-  max-width: 900px;
-  margin: 0 auto;
-`;
-
-const StyledDate = styled.div`
-  margin: 0 1rem; /* mx-4 */
-`;
-
-const CompanyLocation = styled.h4`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0.5rem 0;
-`;
-
 const timelineItems = [
   {
     date: "since Mar. 2024",
@@ -57,7 +28,7 @@ const timelineItems = [
     company: "HKBiS, Handelskammer Hamburg",
     location: "Hamburg",
     content:
-      "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und ZusammenarbeitInvestition, Finanzierung, betriebliches Rechnungswesen, Controlling",
+      "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und Zusammenarbeit, Investition, Finanzierung, betriebliches Rechnungswesen, Controlling",
   },
   {
     date: "Jan. 2020 - Sep. 2023",
@@ -65,7 +36,7 @@ const timelineItems = [
     company: "Targobank",
     location: "Hamburg Altona",
     content:
-      " Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags eigenständige Organistation zur Erreichung vertrieblicher Zielen",
+      "Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags, eigenständige Organisation zur Erreichung vertrieblicher Ziele",
   },
   {
     date: "Jan. 2017 - Dec. 2019",
@@ -80,7 +51,7 @@ const timelineItems = [
     title: "Ausbildung Bankkauffrau",
     company: "Santander",
     location: "Hamburg Dammtor",
-    content: "Ausbildung zur Bankkaufrau bei der Santander Bank",
+    content: "Ausbildung zur Bankkauffrau bei der Santander Bank",
   },
 ];
 
@@ -93,43 +64,53 @@ const icons = [
   <SantanderIcon />,
 ];
 
-const color = "#81ACCF";
+const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
+  .vertical-timeline-element-content {
+    background: ${(props) => (props.isEven ? "#81ACCF" : "white")};
+    color: black;
+  }
+
+  .vertical-timeline-element-arrow {
+    border-right: 7px solid #81acccf;
+  }
+
+  .vertical-timeline-element-icon {
+    background: white;
+    color: black;
+    border: 2px solid #81acccf;
+    padding: 16px;
+    margin-right: 4px;
+  }
+`;
 
 const HEADER_OFFSET = -100;
 
 export default function Timeline() {
   return (
-    <Section id="cv">
-      <Title offset={HEADER_OFFSET}>Timeline</Title>
-      <Container>
+    <section id="cv">
+      <h1 offset={HEADER_OFFSET}>Timeline</h1>
+      <div>
         <VerticalTimeline>
           {timelineItems.map((item, index) => (
-            <VerticalTimelineElement
+            <StyledVerticalTimelineElement
               key={index}
-              date={<StyledDate>{item.date}</StyledDate>}
-              contentStyle={{
-                background: index % 2 === 0 ? color : "white",
-                color: "black",
-              }}
-              contentArrowStyle={{ borderRight: "7px solid #81ACCF" }}
-              iconStyle={{
-                background: "white",
-                color: "black",
-                border: "2px solid #81ACCF",
-                padding: "16px",
-                marginRight: "4px",
-              }}
+              date={item.date}
+              isEven={index % 2 === 0}
               icon={icons[index]}
             >
-              <h3 className="vertical-timeline-element-title">{item.title}</h3>
-              <CompanyLocation>
-                <span>{(item.location, item.company)}</span>
-              </CompanyLocation>
+              <h3>{item.title}</h3>
+              <h4>
+                <span>
+                  {item.company
+                    ? `${item.location}, ${item.company}`
+                    : item.location}
+                </span>
+              </h4>
               <p>{item.content}</p>
-            </VerticalTimelineElement>
+            </StyledVerticalTimelineElement>
           ))}
         </VerticalTimeline>
-      </Container>
-    </Section>
+      </div>
+    </section>
   );
 }
