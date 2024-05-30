@@ -38,7 +38,7 @@ const NavItem = styled.li`
   white-space: nowrap;
 
   .active {
-    color: green;
+    color: #bfd5e7;
     font-weight: bold;
   }
   &:hover {
