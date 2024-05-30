@@ -75,6 +75,7 @@ const StyledTitleCompany = styled.div`
 
 const StyledHeader = styled.h1`
   text-align: center;
+  color: #39556c;
 `;
 
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`

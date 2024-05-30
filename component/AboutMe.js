@@ -14,6 +14,7 @@ const AboutMeContainer = styled.div`
 
 const StyledHeader = styled.h2`
   text-align: center;
+  color: #39556c;
 `;
 
 const StyledText = styled.div`

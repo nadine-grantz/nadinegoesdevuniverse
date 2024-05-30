@@ -119,7 +119,6 @@ const Image = styled.img`
   width: 100%;
   border-radius: 10px;
   border: 2px solid #81accf;
-  margin-bottom: 10px;
 `;
 
 const Description = styled.p`
@@ -141,6 +140,7 @@ const Framework = styled.div`
 
 const StyledHeader = styled.h2`
   text-align: center;
+  color: #39556c;
 `;
 
 export default function Home() {

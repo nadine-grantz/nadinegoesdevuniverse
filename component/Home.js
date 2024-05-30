@@ -15,6 +15,7 @@ const SectionContainer = styled.section`
 const StyledHeader = styled.h1`
   max-width: 28rem;
   margin: auto;
+  color: #39556c;
 `;
 
 const StyledText = styled.p`
