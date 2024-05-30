@@ -6,11 +6,12 @@ import budgetBuddy from "../assets/budgetBuddy.png";
 
 const projects = [
   {
-    title: "plant-World",
+    title: "plantWorld",
     link: "https://plant-world-flame.vercel.app/",
     image: { src: plantWorldPicture.src, alt: "Zimmerpflanze" },
     description:
       " Die App ist der ideale Begleiter für neue und erfahrene Pflanzenliebhaber. Sie bietet Pflegetipps für viele Pflanzen in deiner Sammlung. Benutzer können ihre eigenen Pflanzen hinzufügen. Eine intuitive Benutzeroberfläche macht es einfach,den Überblick über die Pflanzenpflege zu behalten. Mit dieser App wird dein Zuhause zum grünen Paradies!",
+    note: "Die plantWorld wird kontinuierlich verbessert, wenn du also wieder reinschaust kann sie schon wieder anders aussehen",
     projectFrameworks: ["React", "Next.js", "Styled Components"],
   },
   {
@@ -19,6 +20,7 @@ const projects = [
     image: { src: budgetBuddy.src, alt: "Transaktionen in einer Finanzapp" },
     description:
       "Entdecke unsere intuitive Finanz-App für eine mühelose Verfolgung deiner Einnahmen und Ausgaben. Setze dir Sparziele und beobachte,wie du sie erreichst! Ideal auch für junge Menschen, um ihre Finanzplanung zu beginnen und ein solides Fundament aufzubauen.",
+    note: "Diese App ist das Abschlussprojekt aus dem Bootcamp",
     projectFrameworks: [
       "React",
       "Next.js",
@@ -40,6 +42,9 @@ const ProjectsContainer = styled.div`
 `;
 
 const ProjectWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 600px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -62,6 +67,8 @@ const Image = styled.img`
 const Description = styled.p`
   margin: 0;
 `;
+
+const TextContainer = styled.div``;
 
 const FrameworksContainer = styled.div`
   display: flex;
@@ -88,6 +95,10 @@ const ContentWrapper = styled.div`
   gap: 20px;
 `;
 
+const Note = styled.p`
+  // margin: 10px 0 0 0;
+`;
+
 export default function Home() {
   return (
     <>
@@ -100,7 +111,10 @@ export default function Home() {
               <Link href={project.link}>
                 <Image src={project.image.src} alt={project.image.alt} />
               </Link>
-              <Description>{project.description}</Description>
+              <TextContainer>
+                <Description>{project.description}</Description>
+                <Note>{project.note}</Note>
+              </TextContainer>
             </ContentWrapper>
             <FrameworksContainer>
               {project.projectFrameworks.map((framework, index) => (
