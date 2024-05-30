@@ -9,6 +9,7 @@ import { SantanderIcon } from "../icons/santander";
 import { NeueFischeIcon } from "../icons/neuefische";
 import { IHKIcon } from "../icons/ihk";
 import { StudyIcon } from "../icons/study";
+import { TargobankIcon } from "../icons/targobank";
 
 const timelineItems = [
   {
@@ -61,7 +62,7 @@ const icons = [
   <StudyIcon />,
   <NeueFischeIcon />,
   <IHKIcon />,
-  <SantanderIcon />,
+  <TargobankIcon />,
   <SantanderIcon />,
   <SantanderIcon />,
 ];
