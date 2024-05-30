@@ -69,7 +69,6 @@ const StyledTitleCompany = styled.div`
   h4 {
     margin: 0;
     font-weight: bold;
-    color: pink;
   }
 `;
 
@@ -85,6 +84,7 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
 
   .vertical-timeline-element-arrow {
     border-right: 7px solid ${(props) => (props.isEven ? "#81ACCF" : "white")};
+    // color: pink;
   }
 
   .vertical-timeline-element-icon {
@@ -111,9 +111,12 @@ export default function Timeline() {
               isEven={index % 2 === 0}
               icon={icons[index]}
             >
-              <StyledTitleCompany>{item.title}</StyledTitleCompany>
-              <StyledTitleCompany>{item.company}</StyledTitleCompany>
-              <h4>{item.location}</h4>
+              <StyledTitleCompany>
+                <h3>{item.title}</h3>
+                <h4>
+                  {item.company}, {item.location}
+                </h4>
+              </StyledTitleCompany>
               <p>{item.content}</p>
             </StyledVerticalTimelineElement>
           ))}
