@@ -18,14 +18,14 @@ const timelineItems = [
   {
     date: "Nov. 2023 - Mar. 2024",
     title: "Trainee Web Development",
-    company: "NeueFische",
+    company: "neue fische",
     location: "remote",
     content: "Bootcamp - Web Development",
   },
   {
     date: "Aug 2019 - Feb. 2021",
     title: "Geprüfte Wirtschaftsfachwirtin",
-    company: "HKBiS, Handelskammer Hamburg",
+    company: "HKBiS, Handelskammer",
     location: "Hamburg",
     content:
       "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und Zusammenarbeit, Investition, Finanzierung, betriebliches Rechnungswesen, Controlling",
@@ -67,7 +67,7 @@ const icons = [
 const StyledTitleCompany = styled.div`
   h3,
   h4 {
-    margin: 0;
+    margin: 0.5rem 0;
     font-weight: bold;
   }
 `;
@@ -82,9 +82,8 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
     color: black;
   }
 
-  .vertical-timeline-element-arrow {
+  .vertical-timeline-element-content-arrow {
     border-right: 7px solid ${(props) => (props.isEven ? "#81ACCF" : "white")};
-    // color: pink;
   }
 
   .vertical-timeline-element-icon {
@@ -113,11 +112,10 @@ export default function Timeline() {
             >
               <StyledTitleCompany>
                 <h3>{item.title}</h3>
-                <h4>
-                  {item.company}, {item.location}
-                </h4>
+                <h4>{item.company}</h4>
               </StyledTitleCompany>
               <p>{item.content}</p>
+              <p>{item.location}</p>
             </StyledVerticalTimelineElement>
           ))}
         </VerticalTimeline>
