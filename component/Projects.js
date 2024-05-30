@@ -117,7 +117,8 @@ const Title = styled.h2`
 
 const Image = styled.img`
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 2px solid #81accf;
   margin-bottom: 10px;
 `;
 
