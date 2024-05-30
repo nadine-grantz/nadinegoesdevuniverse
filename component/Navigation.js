@@ -35,6 +35,11 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   cursor: pointer;
+
+  .active {
+    color: green;
+    font-weight: bold;
+  }
   &:hover {
     text-decoration: underline;
   }

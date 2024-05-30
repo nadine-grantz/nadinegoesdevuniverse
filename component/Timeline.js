@@ -64,6 +64,15 @@ const icons = [
   <SantanderIcon />,
 ];
 
+const StyledTitleCompany = styled.div`
+  h3,
+  h4 {
+    margin: 0;
+    font-weight: bold;
+    color: pink;
+  }
+`;
+
 const StyledHeader = styled.h1`
   text-align: center;
 `;
@@ -75,7 +84,7 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   }
 
   .vertical-timeline-element-arrow {
-    border-right: 7px solid #81acccf;
+    border-right: 7px solid ${(props) => (props.isEven ? "#81ACCF" : "white")};
   }
 
   .vertical-timeline-element-icon {
@@ -102,14 +111,9 @@ export default function Timeline() {
               isEven={index % 2 === 0}
               icon={icons[index]}
             >
-              <h3>{item.title}</h3>
-              <h4>
-                <span>
-                  {item.company
-                    ? `${item.location}, ${item.company}`
-                    : item.location}
-                </span>
-              </h4>
+              <StyledTitleCompany>{item.title}</StyledTitleCompany>
+              <StyledTitleCompany>{item.company}</StyledTitleCompany>
+              <h4>{item.location}</h4>
               <p>{item.content}</p>
             </StyledVerticalTimelineElement>
           ))}
