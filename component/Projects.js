@@ -3,12 +3,13 @@ import styled from "styled-components";
 import Link from "next/link";
 import plantWorldPicture from "../assets/plantWorldPicture.png";
 import budgetBuddy from "../assets/budgetBuddy.png";
+import plantWorld from "../assets/plantWorld.png";
 
 const projects = [
   {
     title: "plantWorld",
     link: "https://plant-world-flame.vercel.app/",
-    image: { src: plantWorldPicture.src, alt: "Zimmerpflanze" },
+    image: { src: plantWorld.src, alt: "Zimmerpflanze" },
     description:
       " Die App ist der ideale Begleiter für neue und erfahrene Pflanzenliebhaber. Sie bietet Pflegetipps für viele Pflanzen in deiner Sammlung. Benutzer können ihre eigenen Pflanzen hinzufügen. Eine intuitive Benutzeroberfläche macht es einfach,den Überblick über die Pflanzenpflege zu behalten. Mit dieser App wird dein Zuhause zum grünen Paradies!",
     note: "Die plantWorld wird kontinuierlich verbessert, wenn du also wieder reinschaust kann sie schon wieder anders aussehen",
