@@ -40,7 +40,7 @@ const ProjectsContainer = styled.div`
 `;
 
 const ProjectWrapper = styled.div`
-  width: 300px;
+  width: 600px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -54,20 +54,20 @@ const Title = styled.h2`
 
 const Image = styled.img`
   width: 100%;
+  height: auto;
   border-radius: 10px;
   border: 2px solid #81accf;
 `;
 
 const Description = styled.p`
-  margin-bottom: 10px;
-  position: absolut;
-  display-inline-block;
+  margin: 0;
 `;
 
 const FrameworksContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin-top: 10px;
 `;
 
 const Framework = styled.div`
@@ -82,6 +82,11 @@ const StyledHeader = styled.h2`
   color: #39556c;
 `;
 
+const ContentWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+
 export default function Home() {
   return (
     <>
@@ -90,10 +95,12 @@ export default function Home() {
         {projects.map((project) => (
           <ProjectWrapper key={project.title}>
             <Title>{project.title}</Title>
-            <Link href={project.link}>
-              <Image src={project.image.src} alt={project.image.alt} />
-            </Link>
-            <Description>{project.description}</Description>
+            <ContentWrapper>
+              <Link href={project.link}>
+                <Image src={project.image.src} alt={project.image.alt} />
+              </Link>
+              <Description>{project.description}</Description>
+            </ContentWrapper>
             <FrameworksContainer>
               {project.projectFrameworks.map((framework, index) => (
                 <Framework key={index}>{framework}</Framework>
