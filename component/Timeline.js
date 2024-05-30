@@ -80,6 +80,7 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   .vertical-timeline-element-content {
     background: ${(props) => (props.isEven ? "#81ACCF" : "white")};
     color: black;
+    box-shadow: none;
   }
 
   .vertical-timeline-element-content-arrow {
