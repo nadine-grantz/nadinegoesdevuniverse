@@ -112,6 +112,7 @@ const ProjectWrapper = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 10px;
+  color: #81accf;
 `;
 
 const Image = styled.img`
@@ -148,10 +149,10 @@ export default function Home() {
       <ProjectsContainer id="projects">
         {projects.map((project) => (
           <ProjectWrapper key={project.title}>
-            <Title>
-              <Link href={project.link}>{project.title}</Link>
-            </Title>
-            <Image src={project.image.src} alt={project.image.alt} />
+            <Title>{project.title}</Title>
+            <Link href={project.link}>
+              <Image src={project.image.src} alt={project.image.alt} />
+            </Link>
             <Description>{project.description}</Description>
             <FrameworksContainer>
               {project.projectFrameworks.map((framework, index) => (
