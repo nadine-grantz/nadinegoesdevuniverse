@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
 `;
 
 const AboutMeContainer = styled.div`
-  max-width: 28rem;
+  max-width: 40rem;
   margin: auto;
 `;
 

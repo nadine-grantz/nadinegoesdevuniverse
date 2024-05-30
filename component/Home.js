@@ -16,10 +16,14 @@ const StyledHeader = styled.h1`
   max-width: 28rem;
   margin: auto;
   color: #39556c;
+  white-space: nowrap;
 `;
 
 const StyledText = styled.p`
   text-align: center;
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 2em;
 `;
 
 const LinksContainer = styled.div`
@@ -47,7 +51,8 @@ export default function Home() {
       <StyledHeader>Hello World!</StyledHeader>
       <StyledText>
         Willkommen auf meiner Website, wie du siehst ist sie noch nicht fertig,
-        man darf gespannt sein
+        man darf gespannt sein. Ich arbeite momentan jeden Tag daran
+        Verbesserungen zu implementieren
       </StyledText>
       <LinksContainer>
         <StyledLink href="https://github.com/nadine-grantz">

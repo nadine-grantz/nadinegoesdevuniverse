@@ -80,6 +80,7 @@ const Framework = styled.div`
 const StyledHeader = styled.h2`
   text-align: center;
   color: #39556c;
+  margin: 1rem 1rem 3rem;
 `;
 
 const ContentWrapper = styled.div`

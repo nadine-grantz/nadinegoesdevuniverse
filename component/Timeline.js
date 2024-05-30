@@ -8,6 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { SantanderIcon } from "../icons/santander";
 import { NeueFischeIcon } from "../icons/neuefische";
 import { IHKIcon } from "../icons/ihk";
+import { StudyIcon } from "../icons/study";
 
 const timelineItems = [
   {
@@ -57,7 +58,7 @@ const timelineItems = [
 ];
 
 const icons = [
-  <SantanderIcon />,
+  <StudyIcon />,
   <NeueFischeIcon />,
   <IHKIcon />,
   <SantanderIcon />,
@@ -76,6 +77,7 @@ const StyledTitleCompany = styled.div`
 const StyledHeader = styled.h1`
   text-align: center;
   color: #39556c;
+  margin: 3rem 2rem 3rem;
 `;
 
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
