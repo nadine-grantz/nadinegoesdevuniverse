@@ -51,11 +51,8 @@ const ContentWrapper = styled.div`
 
 const StyledImage = styled.img`
   width: 10rem;
-  height: 10rem;
-  background-color: white;
   border-radius: 20%;
-  margin-right: 1rem;
-  border: 0.5rem solid rgb(238, 174, 202);
+  border: 0.2rem solid #ff7300;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 `;

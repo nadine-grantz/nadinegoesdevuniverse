@@ -35,6 +35,7 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   cursor: pointer;
+  white-space: nowrap;
 
   .active {
     color: green;
