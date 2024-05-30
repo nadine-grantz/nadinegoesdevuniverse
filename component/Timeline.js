@@ -81,6 +81,15 @@ const StyledHeader = styled.h1`
   margin: 3rem 2rem 3rem;
 `;
 
+const StyledIcon = styled.div`
+  // width: 100px;
+  // height: 100px;
+  // svg {
+  //   width: 100%;
+  //   height: 100%;
+  // }
+`;
+
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   .vertical-timeline-element-content {
     background: ${(props) => (props.isEven ? "#81ACCF" : "white")};
