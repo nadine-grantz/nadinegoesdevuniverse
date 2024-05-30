@@ -17,10 +17,11 @@ const timelineItems = [
   },
   {
     date: "Nov. 2023 - Mar. 2024",
-    title: "Trainee Web Development",
+    title: "Bootcamp -  Web Development",
     company: "neue fische",
     location: "remote",
-    content: "Bootcamp - Web Development",
+    content:
+      "Das Bootcamp war eine spannende Reise: In 720 Unterrichtseinheiten lernte ich HTML, CSS, JavaScript, React, Next.js und vieles mehr. Diese Herausforderung erweiterte nicht nur meine Fähigkeiten, sondern bestätigte mich in meinem neuen Lebensabschnitt.",
   },
   {
     date: "Aug 2019 - Feb. 2021",
@@ -44,7 +45,7 @@ const timelineItems = [
     company: "Santander",
     location: "Hamburg Altona und Dammtor",
     content:
-      "Beratungstätigkeit in den Bereichen Investment, Kredit, Konten und Kreditkarten",
+      "Umfassende Beratung in den Bereichen Investment, Kredite, Konten und Kreditkarten, um optimale finanzielle Lösungen für Kunden zu finden.",
   },
   {
     date: "Aug 2014 - Jan. 2017",
