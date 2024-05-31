@@ -30,8 +30,17 @@ const timelineItems = [
     title: "Geprüfte Wirtschaftsfachwirtin",
     company: "HKBiS, Handelskammer",
     location: "Hamburg",
-    content:
-      "Zertifikat der Handelskammer Hamburg in den Bereichen Betriebliches Management, Unternehmensführung, Volks- und Betriebswirtschaft, Personalmanagement, Führung und Zusammenarbeit, Investition, Finanzierung, betriebliches Rechnungswesen, Controlling",
+    content: [
+      "Betriebliches Management",
+      "Personalmanagement",
+      "Führung und Zusammenarbeit",
+      "Unternehmensführung",
+      "Volks- und Betriebswirtschaft",
+      "Investition",
+      "Finanzierung",
+      "Betriebliches Rechnungswesen",
+      "Controlling",
+    ],
   },
   {
     date: "Jan. 2020 - Sep. 2023",
@@ -75,19 +84,10 @@ const StyledTitleCompany = styled.div`
   }
 `;
 
-const StyledHeader = styled.h1`
+const StyledHeader = styled.h2`
   text-align: center;
   color: #39556c;
   margin: 3rem 2rem 3rem;
-`;
-
-const StyledIcon = styled.div`
-  // width: 100px;
-  // height: 100px;
-  // svg {
-  //   width: 100%;
-  //   height: 100%;
-  // }
 `;
 
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
@@ -110,12 +110,10 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   }
 `;
 
-const HEADER_OFFSET = -100;
-
 export default function Timeline() {
   return (
     <section id="cv">
-      <StyledHeader offset={HEADER_OFFSET}>CV</StyledHeader>
+      <StyledHeader>CV</StyledHeader>
       <div>
         <VerticalTimeline>
           {timelineItems.map((item, index) => (
@@ -129,7 +127,15 @@ export default function Timeline() {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
               </StyledTitleCompany>
-              <p>{item.content}</p>
+              {Array.isArray(item.content) ? (
+                <ul>
+                  {item.content.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{item.content}</p>
+              )}
               <p>{item.location}</p>
             </StyledVerticalTimelineElement>
           ))}
