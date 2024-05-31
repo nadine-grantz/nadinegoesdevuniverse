@@ -115,7 +115,7 @@ const HEADER_OFFSET = -100;
 export default function Timeline() {
   return (
     <section id="cv">
-      <StyledHeader offset={HEADER_OFFSET}>Timeline</StyledHeader>
+      <StyledHeader offset={HEADER_OFFSET}>CV</StyledHeader>
       <div>
         <VerticalTimeline>
           {timelineItems.map((item, index) => (
