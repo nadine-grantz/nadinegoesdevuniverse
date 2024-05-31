@@ -53,6 +53,8 @@ const ProjectWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
 `;
 
 const Title = styled.h2`
@@ -61,7 +63,7 @@ const Title = styled.h2`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  max-width: 215px;
   height: auto;
   border-radius: 10px;
   border: 2px solid #81accf;
