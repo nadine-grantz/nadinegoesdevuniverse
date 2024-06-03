@@ -110,6 +110,22 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   }
 `;
 
+function renderItemContent(item) {
+  const isArray = Array.isArray(item.content);
+
+  if (isArray) {
+    return (
+      <ul>
+        {item.content.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ul>
+    );
+  } else {
+    return <p>{item.content}</p>;
+  }
+}
+
 export default function Timeline() {
   return (
     <section id="cv">
@@ -127,15 +143,7 @@ export default function Timeline() {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
               </StyledTitleCompany>
-              {Array.isArray(item.content) ? (
-                <ul>
-                  {item.content.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              ) : (
-                <p>{item.content}</p>
-              )}
+              {renderItemContent(item)}
               <p>{item.location}</p>
             </StyledVerticalTimelineElement>
           ))}
