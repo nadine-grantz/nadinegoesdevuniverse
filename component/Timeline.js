@@ -73,7 +73,6 @@ const icons = [
   <NeueFischeIcon />,
   <TargobankIcon />,
   <IHKIcon />,
-
   <SantanderIcon />,
   <SantanderIcon />,
 ];
