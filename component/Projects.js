@@ -41,7 +41,8 @@ const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ProjectWrapper = styled.div`
@@ -53,11 +54,11 @@ const ProjectWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
-  // margin-right: 1rem;
-  // margin-left: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 `;
 
-const Title = styled.h2`
+const ProjectTitle = styled.h2`
   margin-bottom: 10px;
   color: #81accf;
 `;
@@ -92,7 +93,6 @@ const Framework = styled.div`
 const StyledHeader = styled.h2`
   text-align: center;
   color: #39556c;
-  margin: 1rem 1rem 3rem;
 `;
 
 const ContentWrapper = styled.div`
@@ -100,25 +100,21 @@ const ContentWrapper = styled.div`
   gap: 20px;
 `;
 
-const Note = styled.p`
-  // margin: 10px 0 0 0;
-`;
-
 export default function Home() {
   return (
     <>
       <ProjectsContainer id="projects">
-        <StyledHeader>Projetcs</StyledHeader>
+        <StyledHeader>Projects</StyledHeader>
         {projects.map((project) => (
           <ProjectWrapper key={project.title}>
-            <Title>{project.title}</Title>
+            <ProjectTitle>{project.title}</ProjectTitle>
             <ContentWrapper>
               <Link href={project.link}>
                 <Image src={project.image.src} alt={project.image.alt} />
               </Link>
               <TextContainer>
                 <Description>{project.description}</Description>
-                <Note>{project.note}</Note>
+                <p>{project.note}</p>
               </TextContainer>
             </ContentWrapper>
             <FrameworksContainer>
