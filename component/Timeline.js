@@ -25,6 +25,15 @@ const timelineItems = [
     content:
       "Das Bootcamp war eine spannende Reise: In 720 Unterrichtseinheiten lernte ich HTML, CSS, JavaScript, React, Next.js und vieles mehr. Diese Herausforderung erweiterte nicht nur meine Fähigkeiten, sondern bestätigte mich in meinem neuen Lebensabschnitt.",
   },
+
+  {
+    date: "Jan. 2020 - Sep. 2023",
+    title: "Privatkundenberaterin",
+    company: "Targobank",
+    location: "Hamburg Altona",
+    content:
+      "Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags, eigenständige Organisation zur Erreichung vertrieblicher Ziele",
+  },
   {
     date: "Aug 2019 - Feb. 2021",
     title: "Geprüfte Wirtschaftsfachwirtin",
@@ -41,14 +50,6 @@ const timelineItems = [
       "Betriebliches Rechnungswesen",
       "Controlling",
     ],
-  },
-  {
-    date: "Jan. 2020 - Sep. 2023",
-    title: "Privatkundenberaterin",
-    company: "Targobank",
-    location: "Hamburg Altona",
-    content:
-      "Verantwortlichkeit bei unterschiedlichen filialinternen Qualitätsmessgrößen und internen Projektarbeiten, Organisation/ Administration des Filialalltags, eigenständige Organisation zur Erreichung vertrieblicher Ziele",
   },
   {
     date: "Jan. 2017 - Dec. 2019",
@@ -70,8 +71,9 @@ const timelineItems = [
 const icons = [
   <StudyIcon />,
   <NeueFischeIcon />,
-  <IHKIcon />,
   <TargobankIcon />,
+  <IHKIcon />,
+
   <SantanderIcon />,
   <SantanderIcon />,
 ];
