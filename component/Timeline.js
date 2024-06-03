@@ -108,6 +108,12 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
     padding: 16px;
     margin-right: 4px;
   }
+
+  ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 function renderItemContent(item) {
@@ -116,8 +122,8 @@ function renderItemContent(item) {
   if (isArray) {
     return (
       <ul>
-        {item.content.map((point, index) => (
-          <li key={index}>{point}</li>
+        {item.content.map((point, id) => (
+          <li key={id}>{point}</li>
         ))}
       </ul>
     );
