@@ -107,8 +107,8 @@ const Note = styled.p`
 export default function Home() {
   return (
     <>
-      <StyledHeader>Projetcs</StyledHeader>
       <ProjectsContainer id="projects">
+        <StyledHeader>Projetcs</StyledHeader>
         {projects.map((project) => (
           <ProjectWrapper key={project.title}>
             <Title>{project.title}</Title>
