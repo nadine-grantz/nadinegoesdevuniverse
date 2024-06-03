@@ -9,7 +9,7 @@ import Projects from "../component/Projects";
 
 const GlobalStyles = createGlobalStyle`
   #__next {
-    // width: fit-content;
+    width: fit-content;
   }
 
   body {

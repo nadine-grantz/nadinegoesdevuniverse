@@ -38,11 +38,23 @@ const projects = [
 ];
 
 const ProjectsContainer = styled.div`
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 20px;
+  // flex-direction: column;
+  // align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  padding: 20px;
+`;
+
+const ProjectsRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 `;
 
 const ProjectWrapper = styled.div`
@@ -54,8 +66,9 @@ const ProjectWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  // margin-right: 1rem;
+  // margin-left: 1rem;
+  margin: 1rem;
 `;
 
 const ProjectTitle = styled.h2`
@@ -105,25 +118,27 @@ export default function Home() {
     <>
       <ProjectsContainer id="projects">
         <StyledHeader>Projects</StyledHeader>
-        {projects.map((project) => (
-          <ProjectWrapper key={project.title}>
-            <ProjectTitle>{project.title}</ProjectTitle>
-            <ContentWrapper>
-              <Link href={project.link}>
-                <Image src={project.image.src} alt={project.image.alt} />
-              </Link>
-              <TextContainer>
-                <Description>{project.description}</Description>
-                <p>{project.note}</p>
-              </TextContainer>
-            </ContentWrapper>
-            <FrameworksContainer>
-              {project.projectFrameworks.map((framework, id) => (
-                <Framework key={id}>{framework}</Framework>
-              ))}
-            </FrameworksContainer>
-          </ProjectWrapper>
-        ))}
+        <ProjectsRow>
+          {projects.map((project) => (
+            <ProjectWrapper key={project.title}>
+              <ProjectTitle>{project.title}</ProjectTitle>
+              <ContentWrapper>
+                <Link href={project.link}>
+                  <Image src={project.image.src} alt={project.image.alt} />
+                </Link>
+                <TextContainer>
+                  <Description>{project.description}</Description>
+                  <p>{project.note}</p>
+                </TextContainer>
+              </ContentWrapper>
+              <FrameworksContainer>
+                {project.projectFrameworks.map((framework, id) => (
+                  <Framework key={id}>{framework}</Framework>
+                ))}
+              </FrameworksContainer>
+            </ProjectWrapper>
+          ))}
+        </ProjectsRow>
       </ProjectsContainer>
     </>
   );
