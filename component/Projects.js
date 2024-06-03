@@ -53,8 +53,8 @@ const ProjectWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  // margin-right: 1rem;
+  // margin-left: 1rem;
 `;
 
 const Title = styled.h2`
@@ -122,8 +122,8 @@ export default function Home() {
               </TextContainer>
             </ContentWrapper>
             <FrameworksContainer>
-              {project.projectFrameworks.map((framework, index) => (
-                <Framework key={index}>{framework}</Framework>
+              {project.projectFrameworks.map((framework, id) => (
+                <Framework key={id}>{framework}</Framework>
               ))}
             </FrameworksContainer>
           </ProjectWrapper>
