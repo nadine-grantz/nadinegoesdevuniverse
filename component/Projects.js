@@ -38,11 +38,6 @@ const projects = [
 ];
 
 const ProjectsContainer = styled.div`
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 20px;
-  // flex-direction: column;
-  // align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,8 +61,6 @@ const ProjectWrapper = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
-  // margin-right: 1rem;
-  // margin-left: 1rem;
   margin: 1rem;
 `;
 
