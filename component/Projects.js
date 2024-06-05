@@ -31,7 +31,7 @@ const projects = [
       "Node.js",
       "MongoDB Atlas",
       "Mongoose",
-      "useSWR",
+      "SWR",
       "Chart.js",
     ],
   },
