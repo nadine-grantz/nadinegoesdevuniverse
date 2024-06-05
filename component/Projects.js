@@ -74,6 +74,12 @@ const Image = styled.img`
   height: auto;
   border-radius: 10px;
   border: 2px solid #81accf;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
 `;
 
 const Description = styled.p`
