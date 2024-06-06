@@ -7,6 +7,7 @@ import Footer from "../component/Footer";
 import Timeline from "../component/Timeline";
 import Projects from "../component/Projects";
 import { useState } from "react";
+import ToggleButtonDarkMode from "../component/ToggleDarkModeButton";
 
 const GlobalStyles = createGlobalStyle`
   #__next {
@@ -21,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --color-primary: #81ACCF;
+  --color-primary: #81ACCF;
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-header: #39556c;
@@ -32,22 +33,23 @@ const GlobalStyles = createGlobalStyle`
     --color-framework-bg: #f0f0f0;
 
     --StyledBackground: var(--color-background-gradient);
-    --StyledHeader: var(--color-header);
-    --StyledVerticalTimelineElementEvenContent: var(--color-primary);
-    --StyledVerticalTimelineElementUnEvenContent: var(--color-white);
-    --StyledVerticalTimelineElementEvenArrow: var(--color-primary);
-    --StyledVerticalTimelineElementUnEvenArrow: var(--color-white);
-    --StyledVerticalTimelineElementIconBorder: var(--color-primary);
-    --StyledProjectTitleHeader: var(--color-primary);
-    --StyledProjectImageBorder: var(--color-primary);
-    --StyledImageHoverBorder: var(--color-hover-border);
-    --StyledFrameWorkBackground: var(--color-framework-bg);
-    --StyledNavigationBackground: var(--color-background-light);
-    --StyledNavigationOutlineBorder: var(--color-outline-border);
-    --StyledNavigationInlineBorder: var(--color-primary);
-    --StyledNavigationActiveItem: var(--color-outline-border);
-}
+    --color-text: var(--color-black);
+  }
 
+  [data-theme="dark"] {
+    --color-primary: #555555;
+    --color-white: #000000;
+    --color-black: #FFFFFF;
+    --color-header: #ffffff;
+    --color-outline-border: #bfd5e7;
+    --color-hover-border: rgba(255, 255, 255, 0.2);
+    --color-background-light: rgba(0, 0, 0, 0.9);
+    --color-background-gradient: radial-gradient(circle, rgba(0, 0, 0, 0.837) 0%, rgba(0, 0, 0, 1) 81%);
+    --color-framework-bg: #333333;
+
+    --StyledBackground: var(--color-background-gradient);
+    --color-text: var(--color-white);
+  }
   ul {
     padding-inline-start: 0;
   }
@@ -70,8 +72,13 @@ const GlobalStyles = createGlobalStyle`
 
 export default function App({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false);
+
   return (
-    <>
+    <div data-theme={isDark ? "dark" : "light"}>
+      <ToggleButtonDarkMode
+        isChecked={isDark}
+        handleChange={() => setIsDark(!isDark)}
+      />
       <GlobalStyles />
       <Navigation />
       <Home />
@@ -80,6 +87,6 @@ export default function App({ Component, pageProps }) {
       <Timeline />
       <Footer />
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
