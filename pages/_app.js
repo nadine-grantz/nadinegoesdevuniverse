@@ -6,6 +6,7 @@ import Navigation from "../component/Navigation";
 import Footer from "../component/Footer";
 import Timeline from "../component/Timeline";
 import Projects from "../component/Projects";
+import { useState } from "react";
 
 const GlobalStyles = createGlobalStyle`
   #__next {
@@ -68,6 +69,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default function App({ Component, pageProps }) {
+  const [isDark, setIsDark] = useState(false);
   return (
     <>
       <GlobalStyles />
