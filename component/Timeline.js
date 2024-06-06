@@ -107,10 +107,10 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
 
   .vertical-timeline-element-icon {
     background: var(--color-white);
-    color: var(--color-black);
-    border: 2px solid var(--color-primary);
-    padding: 16px;
-    margin-right: 4px;
+    // color: var(--color-black);
+    // border: 2px solid var(--color-primary);
+    // padding: 16px;
+    // margin-right: 4px;
   }
 
   ul {
