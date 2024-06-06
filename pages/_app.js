@@ -20,13 +20,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root{
+    -- StyledBackground:radial-gradient(circle, rgba(255,115,0,0.8379726890756303) 0%, rgba(255,227,188,1) 81%);
     --StyledHeader:#39556c;
     -- StyledVerticalTimelineElementEvenContent:#81ACCF;
-    -- StyledVerticalTimelineElementUnEvenContent: white;
-    -- StyledBlack: black;
-    -- StyledWhite: white;
+    -- StyledVerticalTimelineElementUnEvenContent: #FFFFFF;
+    -- StyledBlack: #000000;
+    -- StyledWhite: #FFFFFF;
     -- StyledVerticalTimelineElementEvenArrow:#81ACCF;
-    -- StyledVerticalTimelineElementUnEvenArrow:#white;
+    -- StyledVerticalTimelineElementUnEvenArrow:#FFFFFF;
     -- StyledVerticalTimelineElementIconBorder:#81acccf;
     -- StyledProjectTitleHeader: #81ACCF;
     -- StyledProjectImageBorder:#81ACCF;
