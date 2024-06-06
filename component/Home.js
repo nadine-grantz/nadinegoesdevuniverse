@@ -15,7 +15,7 @@ const SectionContainer = styled.section`
 const StyledHeader = styled.h1`
   max-width: 28rem;
   margin: auto;
-  color: #39556c;
+  color: var(--color-header);
   white-space: nowrap;
 `;
 
@@ -41,7 +41,7 @@ const IconContainer = styled.div`
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 50%;
 `;
 

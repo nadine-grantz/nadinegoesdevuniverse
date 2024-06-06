@@ -61,20 +61,20 @@ const ProjectWrapper = styled.div`
   padding: 20px;
   // border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-white);
   margin: 1rem;
 `;
 
 const ProjectTitle = styled.h2`
   margin-bottom: 10px;
-  color: #81accf;
+  color: var(--color-header);
 `;
 
 const Image = styled.img`
   max-width: 215px;
   height: auto;
   border-radius: 10px;
-  border: 2px solid #81accf;
+  border: 2px solid var(--color-primary);
 
   &:hover {
     transform: scale(1.05);
@@ -97,7 +97,7 @@ const FrameworksContainer = styled.div`
 `;
 
 const Framework = styled.div`
-  background-color: #f0f0f0;
+  background-color: var(--color-framework-bg);
   border-radius: 10%;
   padding: 5px 10px;
   text-align: center;
@@ -105,7 +105,7 @@ const Framework = styled.div`
 
 const StyledHeader = styled.h2`
   text-align: center;
-  color: #39556c;
+  color: var(--color-header);
 `;
 
 const ContentWrapper = styled.div`
