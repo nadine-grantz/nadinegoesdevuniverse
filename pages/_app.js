@@ -16,7 +16,6 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #FEFFFF;
     background: radial-gradient(circle, rgba(255,115,0,0.8379726890756303) 0%, rgba(255,227,188,1) 81%);
 
   ul {
