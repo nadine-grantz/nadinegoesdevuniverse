@@ -19,27 +19,33 @@ const GlobalStyles = createGlobalStyle`
     background: radial-gradient(circle, rgba(255,115,0,0.8379726890756303) 0%, rgba(255,227,188,1) 81%);
   }
 
-  :root{
-    -- StyledBackground:radial-gradient(circle, rgba(255,115,0,0.8379726890756303) 0%, rgba(255,227,188,1) 81%);
-    --StyledHeader:#39556c;
-    -- StyledVerticalTimelineElementEvenContent:#81ACCF;
-    -- StyledVerticalTimelineElementUnEvenContent: #FFFFFF;
-    -- StyledBlack: #000000;
-    -- StyledWhite: #FFFFFF;
-    -- StyledVerticalTimelineElementEvenArrow:#81ACCF;
-    -- StyledVerticalTimelineElementUnEvenArrow:#FFFFFF;
-    -- StyledVerticalTimelineElementIconBorder:#81acccf;
-    -- StyledProjectTitleHeader: #81ACCF;
-    -- StyledProjectImageBorder:#81ACCF;
-    -- StyledImageHoverBorder: rgba(0, 0, 0, 0.2);
-    -- StyledFrameWorkBackground:#f0f0f0;
-    -- StyledNavigationBackground:rgba(255, 255, 255, 0.9);
-    -- StyledNavigationOutlineBorder:#bfd5e7;
-    -- StyledNavigationInlineBorder:#81accf;
-    -- StyledNavigationActiveItem:#bfd5e7;
-  }
+  :root {
+    --color-primary: #81ACCF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-header: #39556c;
+    --color-outline-border: #bfd5e7;
+    --color-hover-border: rgba(0, 0, 0, 0.2);
+    --color-background-light: rgba(255, 255, 255, 0.9);
+    --color-background-gradient: radial-gradient(circle, rgba(255, 115, 0, 0.837) 0%, rgba(255, 227, 188, 1) 81%);
+    --color-framework-bg: #f0f0f0;
 
-
+    --StyledBackground: var(--color-background-gradient);
+    --StyledHeader: var(--color-header);
+    --StyledVerticalTimelineElementEvenContent: var(--color-primary);
+    --StyledVerticalTimelineElementUnEvenContent: var(--color-white);
+    --StyledVerticalTimelineElementEvenArrow: var(--color-primary);
+    --StyledVerticalTimelineElementUnEvenArrow: var(--color-white);
+    --StyledVerticalTimelineElementIconBorder: var(--color-primary);
+    --StyledProjectTitleHeader: var(--color-primary);
+    --StyledProjectImageBorder: var(--color-primary);
+    --StyledImageHoverBorder: var(--color-hover-border);
+    --StyledFrameWorkBackground: var(--color-framework-bg);
+    --StyledNavigationBackground: var(--color-background-light);
+    --StyledNavigationOutlineBorder: var(--color-outline-border);
+    --StyledNavigationInlineBorder: var(--color-primary);
+    --StyledNavigationActiveItem: var(--color-outline-border);
+}
 
   ul {
     padding-inline-start: 0;
