@@ -59,7 +59,7 @@ const ProjectWrapper = styled.div`
   min-width: 200px;
   max-width: 600px;
   padding: 20px;
-  border: 1px solid #ccc;
+  // border: 1px solid #ccc;
   border-radius: 10px;
   background-color: white;
   margin: 1rem;

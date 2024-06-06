@@ -17,6 +17,28 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: sans-serif;
     background: radial-gradient(circle, rgba(255,115,0,0.8379726890756303) 0%, rgba(255,227,188,1) 81%);
+  }
+
+  :root{
+    --StyledHeader:#39556c;
+    -- StyledVerticalTimelineElementEvenContent:#81ACCF;
+    -- StyledVerticalTimelineElementUnEvenContent: white;
+    -- StyledBlack: black;
+    -- StyledWhite: white;
+    -- StyledVerticalTimelineElementEvenArrow:#81ACCF;
+    -- StyledVerticalTimelineElementUnEvenArrow:#white;
+    -- StyledVerticalTimelineElementIconBorder:#81acccf;
+    -- StyledProjectTitleHeader: #81ACCF;
+    -- StyledProjectImageBorder:#81ACCF;
+    -- StyledImageHoverBorder: rgba(0, 0, 0, 0.2);
+    -- StyledFrameWorkBackground:#f0f0f0;
+    -- StyledNavigationBackground:rgba(255, 255, 255, 0.9);
+    -- StyledNavigationOutlineBorder:#bfd5e7;
+    -- StyledNavigationInlineBorder:#81accf;
+    -- StyledNavigationActiveItem:#bfd5e7;
+  }
+
+
 
   ul {
     padding-inline-start: 0;

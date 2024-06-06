@@ -41,9 +41,6 @@ const NavItem = styled.li`
     color: #bfd5e7;
     font-weight: bold;
   }
-  &:hover {
-    text-decoration: underline;
-  }
 `;
 
 const HEADER_OFFSET = -100;
