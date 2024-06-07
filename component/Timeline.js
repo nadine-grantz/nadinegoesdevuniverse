@@ -82,7 +82,16 @@ const StyledTitleCompany = styled.div`
   h4 {
     margin: 0.5rem 0;
     font-weight: bold;
+    color: var(--color-text);
   }
+`;
+
+const StyledList = styled.ul`
+  color: var(--color-text);
+`;
+
+const StyledParagraph = styled.p`
+  color: var(--color-text);
 `;
 
 const StyledHeader = styled.h2`
@@ -125,14 +134,14 @@ function renderItemContent(item) {
 
   if (isArray) {
     return (
-      <ul>
+      <StyledList>
         {item.content.map((point, id) => (
           <li key={id}>{point}</li>
         ))}
-      </ul>
+      </StyledList>
     );
   } else {
-    return <p>{item.content}</p>;
+    return <StyledParagraph>{item.content}</StyledParagraph>;
   }
 }
 

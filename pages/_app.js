@@ -31,20 +31,20 @@ const GlobalStyles = createGlobalStyle`
     --color-background-light: rgba(255, 255, 255, 0.9);
     --color-background-gradient: radial-gradient(circle, rgba(255, 115, 0, 0.837) 0%, rgba(255, 227, 188, 1) 81%);
     --color-framework-bg: #f0f0f0;
-    --color-text: #000000;;
+    --color-text: #000000;
   }
 
   [data-theme="dark"] {
-    --color-primary: pink;
-    --color-white: blue;
-    --color-black: grey;
-    --color-header: yellow;
-    --color-outline-border: red;
-    --color-hover-border: green;
-    --color-background-light: black;
-    --color-background-gradient: red;
-    --color-framework-bg: brown;
-    --color-text: white;
+    --color-primary: #ba2d44;
+    --color-white: #7D0633;
+    --color-black: #d96c7e;
+    --color-header: #2b4078;
+    --color-outline-border: #0F3460;
+    --color-hover-border: rgba(233, 69, 96, 0.2);
+    --color-background-light: rgba(255, 255, 255, 0.9);
+    --color-background-gradient: linear-gradient(to right, #1A1A2E, #16213E);
+    --color-framework-bg: #0F3460;
+    --color-text: #FBDCC4;
   }
 
   ul {
@@ -62,9 +62,7 @@ const GlobalStyles = createGlobalStyle`
     0% {
       opacity: 0;
       transform: translateY(-50px);
-    }
-
-
+  }
 `;
 
 export default function App({ Component, pageProps }) {
