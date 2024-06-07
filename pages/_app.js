@@ -18,11 +18,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: var(--StyledBackground);
+    background: var(--color-background-gradient);
   }
 
   :root {
-  --color-primary: #81ACCF;
+    --color-primary: #81ACCF;
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-header: #39556c;
@@ -31,25 +31,22 @@ const GlobalStyles = createGlobalStyle`
     --color-background-light: rgba(255, 255, 255, 0.9);
     --color-background-gradient: radial-gradient(circle, rgba(255, 115, 0, 0.837) 0%, rgba(255, 227, 188, 1) 81%);
     --color-framework-bg: #f0f0f0;
-
-    --StyledBackground: var(--color-background-gradient);
     --color-text: var(--color-black);
   }
 
   [data-theme="dark"] {
-    --color-primary: #555555;
-    --color-white: #000000;
-    --color-black: #FFFFFF;
-    --color-header: #ffffff;
-    --color-outline-border: #bfd5e7;
-    --color-hover-border: rgba(255, 255, 255, 0.2);
-    --color-background-light: rgba(0, 0, 0, 0.9);
-    --color-background-gradient: radial-gradient(circle, rgba(0, 0, 0, 0.837) 0%, rgba(0, 0, 0, 1) 81%);
-    --color-framework-bg: #333333;
-
-    --StyledBackground: var(--color-background-gradient);
+    --color-primary: pink;
+    --color-white: blue;
+    --color-black: grey;
+    --color-header: yellow;
+    --color-outline-border: red;
+    --color-hover-border: green;
+    --color-background-light: black;
+    --color-background-gradient: red;
+    --color-framework-bg: brown;
     --color-text: var(--color-white);
   }
+
   ul {
     padding-inline-start: 0;
   }
