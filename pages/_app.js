@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     --color-primary: #ba2d44;
     --color-white: #7D0633;
     --color-black: #d96c7e;
-    --color-header: #2b4078;
+    --color-header: #595B83;
     --color-outline-border: #0F3460;
     --color-hover-border: rgba(233, 69, 96, 0.2);
     --color-background-light: rgba(255, 255, 255, 0.9);
