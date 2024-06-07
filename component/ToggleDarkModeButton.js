@@ -26,7 +26,7 @@ const ToggleButton = styled.input`
   }
 `;
 
-export default function ToggleButtonDarkMode({ isChecked }) {
+export default function ToggleButtonDarkMode() {
   function handleChange() {
     if (document.body.dataset.theme === "light") {
       document.body.dataset.theme = "dark";
@@ -36,12 +36,7 @@ export default function ToggleButtonDarkMode({ isChecked }) {
   }
   return (
     <ToggleContainer>
-      <ToggleButton
-        type="checkbox"
-        id="check"
-        onChange={handleChange}
-        checked={isChecked}
-      />
+      <ToggleButton type="checkbox" id="check" onChange={handleChange} />
       <label htmlFor="check">Dart Mode</label>
     </ToggleContainer>
   );

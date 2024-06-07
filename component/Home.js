@@ -24,6 +24,7 @@ const StyledText = styled.p`
   max-width: 40rem;
   margin: auto;
   margin-top: 2em;
+  color: var(--color-text);
 `;
 
 const LinksContainer = styled.div`

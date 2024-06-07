@@ -85,6 +85,7 @@ const Image = styled.img`
 
 const Description = styled.p`
   margin: 0;
+  color: var(--color-text);
 `;
 
 const TextContainer = styled.div``;
@@ -101,6 +102,7 @@ const Framework = styled.div`
   border-radius: 10%;
   padding: 5px 10px;
   text-align: center;
+  color: var(--color-text);
 `;
 
 const StyledHeader = styled.h2`
@@ -119,6 +121,10 @@ const ContentWrapper = styled.div`
   }
 `;
 
+const NoteWrapper = styled.p`
+  color: var(--color-text);
+`;
+
 export default function Home() {
   return (
     <>
@@ -134,7 +140,7 @@ export default function Home() {
                 </Link>
                 <TextContainer>
                   <Description>{project.description}</Description>
-                  <p>{project.note}</p>
+                  <NoteWrapper>{project.note}</NoteWrapper>
                 </TextContainer>
               </ContentWrapper>
               <FrameworksContainer>

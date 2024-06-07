@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     --color-background-light: rgba(255, 255, 255, 0.9);
     --color-background-gradient: radial-gradient(circle, rgba(255, 115, 0, 0.837) 0%, rgba(255, 227, 188, 1) 81%);
     --color-framework-bg: #f0f0f0;
-    --color-text: var(--color-black);
+    --color-text: #000000;;
   }
 
   [data-theme="dark"] {
@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
     --color-background-light: black;
     --color-background-gradient: red;
     --color-framework-bg: brown;
-    --color-text: var(--color-white);
+    --color-text: white;
   }
 
   ul {
@@ -72,10 +72,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <div data-theme={isDark ? "dark" : "light"}>
-      <ToggleButtonDarkMode
-        isChecked={isDark}
-        handleChange={() => setIsDark(!isDark)}
-      />
+      <ToggleButtonDarkMode handleChange={() => setIsDark(!isDark)} />
       <GlobalStyles />
       <Navigation />
       <Home />
