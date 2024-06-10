@@ -45,10 +45,9 @@ const NavItem = styled.li`
 `;
 
 
-
 const HEADER_OFFSET = -100;
 
-export default function Navigation() {
+export default function Navigation({toggleDarkMode, theme}) {
   return (
     <NavContainer>
       <NavActions>
@@ -97,8 +96,8 @@ export default function Navigation() {
               CV
             </Link> 
           </NavItem>
-        </NavList> 
-        <ToggleButtonDarkMode handleChange={() => setIsDark(!isDark)} /> 
+        </NavList>  
+         <ToggleButtonDarkMode toggleDarkMode={toggleDarkMode} theme={theme}  />  
       </NavActions>
     </NavContainer>
   );

@@ -3,33 +3,23 @@ import styled from "styled-components";
 import { LightSunDarkMode } from "../icons/lightSunDarkMode";
 import { DarkSunDarkMode } from "../icons/darkSunDarkMode";
 
-const ToggleContainer = styled.div`
-  position: absolute;
-  top: 2em;
-  right: 2em;
-`;
+const ToggleButton = styled.button`
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-const ToggleButton = styled.input`
-  display: none;
-
-  & + label {
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-    padding: 0.5em 1em;
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 5px;
-  }
-
-  &:checked + label {
-    background: var(--color-black);
-    color: var(--color-white);
+  &:focus {
+    outline: none;
   }
 `;
 
-export default function ToggleButtonDarkMode() {
-  function handleChange() {
+export default function ToggleButtonDarkMode({toggleDarkMode}) {
+  function handleChange() {  
+    toggleDarkMode();
     if (document.body.dataset.theme === "light") {
       document.body.dataset.theme = "dark";
     } else {
@@ -37,12 +27,8 @@ export default function ToggleButtonDarkMode() {
     }
   }
   return (
-    <div>
-      <input type="checkbox" id="check" onChange={handleChange} />
-      <label htmlFor="check">
-        <LightSunDarkMode />
-        <DarkSunDarkMode/>
-      </label>
-    </div>
+    <>
+      <ToggleButton id="check" onClick={handleChange} > <LightSunDarkMode/> </ToggleButton>
+    </>
   );
 }
