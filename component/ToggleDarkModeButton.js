@@ -36,11 +36,11 @@ export default function ToggleButtonDarkMode() {
     }
   }
   return (
-    <ToggleContainer>
-      <ToggleButton type="checkbox" id="check" onChange={handleChange} />
+    <div>
+      <input type="checkbox" id="check" onChange={handleChange} />
       <label htmlFor="check">
         <LightSunDarkMode />
       </label>
-    </ToggleContainer>
+    </div>
   );
 }

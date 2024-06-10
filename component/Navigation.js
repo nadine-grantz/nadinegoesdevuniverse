@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import ToggleButtonDarkMode from "../component/ToggleDarkModeButton";
 
 const NavContainer = styled.div`
   display: flex;
@@ -42,6 +43,8 @@ const NavItem = styled.li`
     font-weight: bold;
   }
 `;
+
+
 
 const HEADER_OFFSET = -100;
 
@@ -92,9 +95,10 @@ export default function Navigation() {
               to="cv"
             >
               CV
-            </Link>
+            </Link> 
           </NavItem>
-        </NavList>
+        </NavList> 
+        <ToggleButtonDarkMode handleChange={() => setIsDark(!isDark)} /> 
       </NavActions>
     </NavContainer>
   );

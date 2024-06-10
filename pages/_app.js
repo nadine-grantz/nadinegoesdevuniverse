@@ -70,7 +70,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <div data-theme={isDark ? "dark" : "light"}>
-      <ToggleButtonDarkMode handleChange={() => setIsDark(!isDark)} />
       <GlobalStyles />
       <Navigation />
       <Home />
