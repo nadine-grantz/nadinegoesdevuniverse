@@ -8,9 +8,9 @@ import Timeline from "../component/Timeline";
 import Projects from "../component/Projects";
 
 const GlobalStyles = createGlobalStyle`
-  // #__next {
-  //   width: fit-content;
-  // }
+  #__next {
+    width: 100vw;
+  }
 
   body {
     margin: 0;

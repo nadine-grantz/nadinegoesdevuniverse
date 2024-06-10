@@ -56,7 +56,8 @@ const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 600px;
+  min-width: 200px;
+  max-width: 600px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -110,6 +111,8 @@ const StyledHeader = styled.h2`
 const ContentWrapper = styled.div`
   display: flex;
   gap: 20px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export default function Home() {
