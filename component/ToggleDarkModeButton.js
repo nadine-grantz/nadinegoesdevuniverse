@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LightSunDarkMode } from "../icons/lightSunDarkMode";
+import { DarkSunDarkMode } from "../icons/darkSunDarkMode";
 
 const ToggleContainer = styled.div`
   position: absolute;
@@ -40,6 +41,7 @@ export default function ToggleButtonDarkMode() {
       <input type="checkbox" id="check" onChange={handleChange} />
       <label htmlFor="check">
         <LightSunDarkMode />
+        <DarkSunDarkMode/>
       </label>
     </div>
   );
