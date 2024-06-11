@@ -82,32 +82,44 @@ const StyledTitleCompany = styled.div`
   h4 {
     margin: 0.5rem 0;
     font-weight: bold;
+    color: var(--color-text);
   }
+`;
+
+const StyledList = styled.ul`
+  color: var(--color-text);
+`;
+
+const StyledParagraph = styled.p`
+  color: var(--color-text);
 `;
 
 const StyledHeader = styled.h2`
   text-align: center;
-  color: #39556c;
+  color: var(--color-header);
   margin: 3rem 2rem 3rem;
 `;
 
 const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   .vertical-timeline-element-content {
-    background: ${(props) => (props.isEven ? "#81ACCF" : "white")};
-    color: black;
+    background: ${(props) =>
+      props.isEven ? "var(--color-primary)" : "var(--color-white)"};
+    color: var(--color-black);
     box-shadow: none;
   }
 
   .vertical-timeline-element-content-arrow {
-    border-right: 7px solid ${(props) => (props.isEven ? "#81ACCF" : "white")};
+    border-right: 7px solid
+      ${(props) =>
+        props.isEven ? "var(--color-primary)" : "var(--color-white)"};
   }
 
   .vertical-timeline-element-icon {
-    background: white;
-    color: black;
-    border: 2px solid #81acccf;
-    padding: 16px;
-    margin-right: 4px;
+    background: var(--color-white);
+    // color: var(--color-black);
+    // border: 2px solid var(--color-primary);
+    // padding: 16px;
+    // margin-right: 4px;
   }
 
   ul {
@@ -117,19 +129,19 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   }
 `;
 
-function renderItemContent(item) {
+function RenderItemContent(item) {
   const isArray = Array.isArray(item.content);
 
   if (isArray) {
     return (
-      <ul>
+      <StyledList>
         {item.content.map((point, id) => (
           <li key={id}>{point}</li>
         ))}
-      </ul>
+      </StyledList>
     );
   } else {
-    return <p>{item.content}</p>;
+    return <StyledParagraph>{item.content}</StyledParagraph>;
   }
 }
 
@@ -150,7 +162,7 @@ export default function Timeline() {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
               </StyledTitleCompany>
-              {renderItemContent(item)}
+              {RenderItemContent(item)}
               <p>{item.location}</p>
             </StyledVerticalTimelineElement>
           ))}

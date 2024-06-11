@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import ToggleButtonDarkMode from "../component/ToggleDarkModeButton";
 
 const NavContainer = styled.div`
   display: flex;
@@ -10,9 +11,9 @@ const NavContainer = styled.div`
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 0.5rem outset #81accf;
-  outline: 0.5rem solid #bfd5e7;
+  background-color: var(--color-background-light);
+  border: 0.5rem outset var(--color-primary);
+  outline: 0.5rem solid var(--color-outline-border);
   border-radius: 50px;
   font: bold 1rem sans-serif;
   z-index: 1;
@@ -38,11 +39,8 @@ const NavItem = styled.li`
   white-space: nowrap;
 
   .active {
-    color: #bfd5e7;
+    color: var(--color-outline-border);
     font-weight: bold;
-  }
-  &:hover {
-    text-decoration: underline;
   }
 `;
 
@@ -98,6 +96,7 @@ export default function Navigation() {
             </Link>
           </NavItem>
         </NavList>
+        <ToggleButtonDarkMode />
       </NavActions>
     </NavContainer>
   );

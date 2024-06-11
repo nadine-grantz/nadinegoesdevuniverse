@@ -27,8 +27,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        {/* <link rel="stylesheet" href="reset.css" /> */}
-        <body>
+        <body data-theme="light">
           <Main />
           <NextScript />
         </body>

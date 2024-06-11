@@ -59,22 +59,21 @@ const ProjectWrapper = styled.div`
   min-width: 200px;
   max-width: 600px;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--color-white);
   margin: 1rem;
 `;
 
 const ProjectTitle = styled.h2`
   margin-bottom: 10px;
-  color: #81accf;
+  color: var(--color-header);
 `;
 
 const Image = styled.img`
   max-width: 215px;
   height: auto;
   border-radius: 10px;
-  border: 2px solid #81accf;
+  border: 2px solid var(--color-primary);
 
   &:hover {
     transform: scale(1.05);
@@ -85,6 +84,7 @@ const Image = styled.img`
 
 const Description = styled.p`
   margin: 0;
+  color: var(--color-text);
 `;
 
 const TextContainer = styled.div``;
@@ -97,15 +97,16 @@ const FrameworksContainer = styled.div`
 `;
 
 const Framework = styled.div`
-  background-color: #f0f0f0;
+  background-color: var(--color-framework-bg);
   border-radius: 10%;
   padding: 5px 10px;
   text-align: center;
+  color: var(--color-text);
 `;
 
 const StyledHeader = styled.h2`
   text-align: center;
-  color: #39556c;
+  color: var(--color-header);
 `;
 
 const ContentWrapper = styled.div`
@@ -117,6 +118,10 @@ const ContentWrapper = styled.div`
   @media (min-width: 700px) {
     flex-direction: row;
   }
+`;
+
+const NoteWrapper = styled.p`
+  color: var(--color-text);
 `;
 
 export default function Home() {
@@ -134,7 +139,7 @@ export default function Home() {
                 </Link>
                 <TextContainer>
                   <Description>{project.description}</Description>
-                  <p>{project.note}</p>
+                  <NoteWrapper>{project.note}</NoteWrapper>
                 </TextContainer>
               </ContentWrapper>
               <FrameworksContainer>

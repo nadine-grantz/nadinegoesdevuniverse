@@ -5,6 +5,7 @@ const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--color-text);
 `;
 
 export default function Footer() {
