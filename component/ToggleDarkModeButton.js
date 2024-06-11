@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { LightSunDarkMode } from "../icons/lightSunDarkMode";
 import { DarkSunDarkMode } from "../icons/darkSunDarkMode";
@@ -17,18 +17,23 @@ const ToggleButton = styled.button`
   }
 `;
 
-export default function ToggleButtonDarkMode({toggleDarkMode}) {
-  function handleChange() {  
-    toggleDarkMode();
+export default function ToggleButtonDarkMode() {
+  const [isDarkModeIcon, setIsDarkModeIcon] = useState(false);
+
+  function handleChange() {
     if (document.body.dataset.theme === "light") {
       document.body.dataset.theme = "dark";
+      setIsDarkModeIcon(true);
     } else {
       document.body.dataset.theme = "light";
+      setIsDarkModeIcon(false);
     }
   }
   return (
     <>
-      <ToggleButton id="check" onClick={handleChange} > <LightSunDarkMode/> </ToggleButton>
+      <ToggleButton id="check" onClick={handleChange}>
+        {isDarkModeIcon ? <DarkSunDarkMode /> : <LightSunDarkMode />}
+      </ToggleButton>
     </>
   );
 }

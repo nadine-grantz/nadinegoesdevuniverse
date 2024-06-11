@@ -129,7 +129,7 @@ const StyledVerticalTimelineElement = styled(VerticalTimelineElement)`
   }
 `;
 
-function renderItemContent(item) {
+function RenderItemContent(item) {
   const isArray = Array.isArray(item.content);
 
   if (isArray) {
@@ -162,7 +162,7 @@ export default function Timeline() {
                 <h3>{item.title}</h3>
                 <h4>{item.company}</h4>
               </StyledTitleCompany>
-              {renderItemContent(item)}
+              {RenderItemContent(item)}
               <p>{item.location}</p>
             </StyledVerticalTimelineElement>
           ))}

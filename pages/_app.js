@@ -8,7 +8,6 @@ import Timeline from "../component/Timeline";
 import Projects from "../component/Projects";
 import { useState } from "react";
 
-
 const GlobalStyles = createGlobalStyle`
   #__next {
     width: 100vw;
@@ -66,16 +65,10 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default function App({ Component, pageProps }) {
-  const [isDark, setIsDark] = useState(false);
-
-  function toggleDarkMode(){
-    setIsDark(!isDark);
-  };
-
   return (
-    <div data-theme={isDark ? "dark" : "light"}>
+    <div>
       <GlobalStyles />
-      <Navigation toggleDarkMode={toggleDarkMode} />
+      <Navigation />
       <Home />
       <AboutMe />
       <Projects />
