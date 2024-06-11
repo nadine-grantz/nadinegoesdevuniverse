@@ -113,6 +113,10 @@ const ContentWrapper = styled.div`
   gap: 20px;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
 `;
 
 export default function Home() {
