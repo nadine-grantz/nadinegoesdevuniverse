@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import { GithubIcon } from "../icons/github";
 import { LinkedinIcon } from "../icons/linkedin";
+import pictureOfMyself from "../assets/pictureOfMyself.png";
 
 const SectionContainer = styled.section`
   display: flex;
@@ -46,6 +47,13 @@ const IconContainer = styled.div`
   border-radius: 50%;
 `;
 
+const StyledImage = styled.img`
+  width: 200px;
+  height: auto;
+  margin-top: 2em;
+  border-radius: 50%;
+`;
+
 export default function Home() {
   return (
     <SectionContainer id="home">
@@ -55,6 +63,7 @@ export default function Home() {
         man darf gespannt sein. Ich arbeite momentan jeden Tag daran
         Verbesserungen zu implementieren
       </StyledText>
+      <StyledImage src={pictureOfMyself.src} alt="Picture of me" />
       <LinksContainer>
         <StyledLink href="https://github.com/nadine-grantz">
           <IconContainer>
