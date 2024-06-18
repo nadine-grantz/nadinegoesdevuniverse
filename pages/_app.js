@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     --color-outline-border: #0F3460;
     --color-hover-border: rgba(233, 69, 96, 0.2);
     --color-background-light: rgba(255, 255, 255, 0.9);
-    --color-background-gradient: linear-gradient(to right, #1A1A2E, #16213E);
+    --color-background-gradient: radial-gradient(circle, rgba(40,40,69,1) 40%, rgba(22,33,62,1) 56%);;
     --color-framework-bg: #0F3460;
     --color-text: #FBDCC4;
   }
