@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import plantWorld from "../assets/plantWorld.png";
 import capstoneBudgetBuddy from "../assets/capstoneBudgetBuddy.png";
+import BohnenBar from "../assets/bohnenBar.png";
 
 const projects = [
   {
@@ -34,6 +35,15 @@ const projects = [
       "SWR",
       "Chart.js",
     ],
+  },
+  {
+    title: "BohnenBar",
+    link: "https://bohnen-bar.vercel.app/",
+    image: { src: BohnenBar.src, alt: "Webpage of a Cafe" },
+    description:
+      " Die BohnenBar ist mein Cafe. Ihr könnt hier verantwortungsbewusst euren Kaffee genießen, frühstücken gehen oder einen Workshop in angesagter Umgebung buchen. All das könnt ihr vorab schon online auf der Homepage entdecken. Viel Spaß beim Stöbern",
+    note: "Die BohnenBar ist neu, und dient dazu Grundlagen zu stärken",
+    projectFrameworks: ["HTML", "CSS", "JavaScript"],
   },
 ];
 
