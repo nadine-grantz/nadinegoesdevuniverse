@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import plantWorld from "../assets/plantWorld.png";
 import capstoneBudgetBuddy from "../assets/capstoneBudgetBuddy.png";
-import BohnenBar from "../assets/bohnenBar.png";
+import BohnenBar from "../assets/BohnenBar.png";
 
 const projects = [
   {
