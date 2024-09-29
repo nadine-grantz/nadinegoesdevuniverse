@@ -5,6 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Easycircular } from "../icons/easycircular";
 import { SantanderIcon } from "../icons/santander";
 import { NeueFischeIcon } from "../icons/neuefische";
 import { IHKIcon } from "../icons/ihk";
@@ -13,9 +14,17 @@ import { TargobankIcon } from "../icons/targobank";
 
 const timelineItems = [
   {
-    date: "since Mar. 2024",
+    date: "since Aug. 2024",
+    title: "Productmanager",
+    company: "Easycircular Umweltmanagement GmbH",
+    location: "Hamburg Wandsbek",
+    content:
+      "In meiner aktuellen Rolle unterstütze ich die Weiterentwicklung eines intern entwickelten digitalen Waste Management-Portals. Dabei arbeite ich an der Optimierung und Digitalisierung von Arbeitsprozessen. Zu meinen Aufgaben gehören zudem die Kundenberatung sowie die Erstellung von Abfall- und Wertstoffbilanzen und Zero Waste-Konzepten. Ich arbeite daran, die Kundenzufriedenheit zu steigern und unterstütze die Betreuung von Neu- und Bestandskunden.",
+  },
+  {
+    date: "Mar. 2024 - Aug. 2024",
     title: "self learning",
-    location: "remote",
+    location: "In den letzten Monaten habe ich die Zeit genutzt, um meine Programmierkenntnisse weiter auszubauen. Ich habe an eigenen Projekten wie der BohnenBar-App und meiner persönlichen Website gearbeitet. Dabei habe ich mich intensiv mit React, Next.js sowie den Basics wie HTML und CSS beschäftigt. Diese Projekte haben mir geholfen, meine Skills in der Webentwicklung zu vertiefen und praktische Erfahrungen zu sammeln.",
   },
   {
     date: "Nov. 2023 - Mar. 2024",
@@ -69,6 +78,7 @@ const timelineItems = [
 ];
 
 const icons = [
+  <Easycircular/>,
   <StudyIcon />,
   <NeueFischeIcon />,
   <TargobankIcon />,
