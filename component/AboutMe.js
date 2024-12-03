@@ -29,30 +29,28 @@ export default function AboutMe() {
       <AboutMeContainer>
         <StyledText>
           <p>
-            Hallo zusammen! 👋 Ich schlage ein neues, aufregendes Kapitel auf,
-            indem ich nach mehreren Jahren im Vertrieb im Bankensektor nun
-            kopfüber in die Welt der Webentwicklung eintauche.
+            Hallo zusammen! 👋 Ich starte ein neues Kapitel und tausche nach über einem Jahrzehnt 
+            im Vertrieb im Bankensektor Anzug und Aktenkoffer gegen Codezeilen und Kreativität.
             <br />
             <br />
-            Hintergrund: Ich habe mehrere Jahre im Vertrieb bei verschiedenen
-            Banken gearbeitet und konnte dabei viele Erfahrungen in
-            verschiedenen Kundenbereichen sammeln. Außerdem habe ich eine
-            Weiterbildung zur geprüften Wirtschaftsfachwirtin absolviert, um
-            komplexe betriebswirtschaftliche Konzepte zu verstehen.
+            Während meiner Zeit im Bankwesen habe ich vielfältige Erfahrungen im Umgang 
+            mit unterschiedlichen Kunden gesammelt und meinen wirtschaftlichen Horizont 
+            durch eine Weiterbildung zur geprüften Wirtschaftsfachwirtin erweitert. 
+            Diese Qualifikation hat meine Fähigkeit gestärkt, komplexe Zusammenhänge zu 
+            verstehen und zu strukturieren. Anschließend habe ich meine IT-Kenntnisse 
+            ausgebaut und ein intensives Web-Development-Bootcamp absolviert, um meine 
+            Leidenschaft für das Programmieren zu verwirklichen.
             <br />
             <br />
-            Interessen: Neben dem Programmieren reise ich gerne und lasse mich
-            von neuen Kulturen und Erfahrungen inspirieren. Außerdem habe ich
-            einen grünen Daumen und finde Freude an der Pflege von Pflanzen -
-            Rückschläge inbegriffen, denn es gibt nichts Schöneres, als neues
-            Wachstum zu beobachten.
+            Neben meiner Begeisterung für das digitale Handwerk restauriere ich gerne 
+            alte Möbel und bringe sie mit Liebe zum Detail wieder zum Leben. Hier wie 
+            da ist Geduld gefragt – ob beim Debuggen oder beim Abschleifen von Holz – 
+            und ich genieße die Belohnung, wenn etwas Neues entsteht.
             <br />
             <br />
-            Aktueller Fokus: Jeden Tag arbeite ich daran, meine Fähigkeiten in
-            HTML, CSS und JavaScript zu verbessern und die endlosen
-            Möglichkeiten der Webentwicklung zu erkunden. Fazit: Begleite mich
-            auf dieser Reise des Wachstums und der Entdeckung, bei der jede
-            Herausforderung eine Chance ist. 🌱💻
+            HTML, CSS und JavaScript sind mein tägliches Werkzeug, mit dem ich innovative 
+            Lösungen erschaffe und meiner Kreativität freien Lauf lasse. Begleite mich auf 
+            dieser spannenden Reise – ich freue mich darauf, mit dir die nächsten Schritte zu gehen! 
           </p>
         </StyledText>
       </AboutMeContainer>
