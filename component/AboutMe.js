@@ -29,8 +29,8 @@ export default function AboutMe() {
       <AboutMeContainer>
         <StyledText>
           <p>
-            Hallo zusammen! 👋 Ich starte ein neues Kapitel und tausche nach über einem Jahrzehnt 
-            im Vertrieb im Bankensektor Anzug und Aktenkoffer gegen Codezeilen und Kreativität.
+            Hallo zusammen! Ich starte ein neues Kapitel und tausche nach über einem Jahrzehnt 
+            im Vertrieb im Bankensektor Anzug gegen Codezeilen und Kreativität.
             <br />
             <br />
             Während meiner Zeit im Bankwesen habe ich vielfältige Erfahrungen im Umgang 
