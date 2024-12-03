@@ -21,16 +21,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --color-primary: #81ACCF;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-header: #39556c;
-    --color-outline-border: #bfd5e7;
-    --color-hover-border: rgba(0, 0, 0, 0.2);
-    --color-background-light: rgba(255, 255, 255, 0.9);
-    --color-background-gradient: radial-gradient(circle, rgba(255, 115, 0, 0.837) 0%, rgba(255, 227, 188, 1) 81%);
-    --color-framework-bg: #f0f0f0;
-    --color-text: #000000;
+ --color-primary: #A4B494; 
+    --color-white: #E2D6B5; 
+    --color-black: #3B3B3B; 
+    --color-header: #8C9A86; 
+    --color-outline-border: #D4C4A8; 
+    --color-hover-border: rgba(100, 85, 72, 0.2); 
+    --color-background-light: #F3E9D2; 
+    --color-background-gradient: #F3E9D2; 
+    --color-framework-bg: #C9B798; 
+    --color-text: #4B5D4A; 
   }
 
   [data-theme="dark"] {
