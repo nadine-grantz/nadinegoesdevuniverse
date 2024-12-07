@@ -11,7 +11,7 @@ import { useState } from "react";
 const GlobalStyles = createGlobalStyle`
   #__next {
     width: 100vw;
-       padding: 15px;
+    padding: 15px;
   }
 
   body {

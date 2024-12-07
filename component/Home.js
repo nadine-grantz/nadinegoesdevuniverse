@@ -49,7 +49,7 @@ const IconContainer = styled.div`
 
 const StyledImage = styled.img`
   width: 200px;
-  height: auto;
+  height: 200px; 
   margin-top: 2em;
   border-radius: 50%;
 `;
