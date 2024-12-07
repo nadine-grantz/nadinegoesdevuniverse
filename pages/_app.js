@@ -11,11 +11,11 @@ import { useState } from "react";
 const GlobalStyles = createGlobalStyle`
   #__next {
     width: 100vw;
+       padding: 15px;
   }
 
   body {
     margin: 0;
-    padding: 0;
     font-family: sans-serif;
     background: var(--color-background-gradient);
   }
@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     --color-white: #7D0633;
     --color-black: #d96c7e;
     --color-header: #595B83;
-    --color-outline-border: #0F3460;
+    --color-outline-border: #D94F70;
     --color-hover-border: rgba(233, 69, 96, 0.2);
     --color-background-light: rgba(255, 255, 255, 0.9);
     --color-background-gradient: radial-gradient(circle, rgba(40,40,69,1) 40%, rgba(22,33,62,1) 56%);;
