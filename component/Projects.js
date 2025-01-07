@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Budget Buddy",
-    link: "https://capstone-project-budget-buddy.vercel.app/",
+    link: "https://capstone-project-budget-buddy-liart.vercel.app/",
     image: {
       src: capstoneBudgetBuddy.src,
       alt: "Transaktionen in einer Finanzapp",
