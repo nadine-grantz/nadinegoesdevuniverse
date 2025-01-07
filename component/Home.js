@@ -49,7 +49,7 @@ const IconContainer = styled.div`
 
 const StyledImage = styled.img`
   width: 200px;
-  height: 200px; 
+  height: 200px;
   margin-top: 2em;
   border-radius: 50%;
 `;
@@ -57,12 +57,7 @@ const StyledImage = styled.img`
 export default function Home() {
   return (
     <SectionContainer id="home">
-      <StyledHeader>Hello World!</StyledHeader>
-      <StyledText>
-        Willkommen auf meiner Website, wie du siehst ist sie noch nicht fertig,
-        man darf gespannt sein. Ich arbeite momentan jeden Tag daran
-        Verbesserungen zu implementieren
-      </StyledText>
+      <StyledHeader>Willkommen auf meiner Website!</StyledHeader>
       <StyledImage src={pictureOfMyself.src} alt="Picture of me" />
       <LinksContainer>
         <StyledLink href="https://github.com/nadine-grantz">
