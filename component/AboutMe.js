@@ -29,28 +29,35 @@ export default function AboutMe() {
       <AboutMeContainer>
         <StyledText>
           <p>
-            Hallo zusammen! Ich starte ein neues Kapitel und tausche nach über einem Jahrzehnt 
-            im Vertrieb im Bankensektor Anzug gegen Codezeilen und Kreativität.
+            Hallo, schön dass du vorbei schaust! Ich starte ein neues Kapitel
+            und tausche nach über einem Jahrzehnt im Vertrieb im Bankensektor
+            Anzug gegen Kreativität.
             <br />
             <br />
-            Während meiner Zeit im Bankwesen habe ich vielfältige Erfahrungen im Umgang 
-            mit unterschiedlichen Kunden gesammelt und meinen wirtschaftlichen Horizont 
-            durch eine Weiterbildung zur geprüften Wirtschaftsfachwirtin erweitert. 
-            Diese Qualifikation hat meine Fähigkeit gestärkt, komplexe Zusammenhänge zu 
-            verstehen und zu strukturieren. Anschließend habe ich meine IT-Kenntnisse 
-            ausgebaut und ein intensives Web-Development-Bootcamp absolviert, um meine 
-            Leidenschaft für das Programmieren zu verwirklichen.
+            Während meiner Zeit im Bankwesen habe ich vielfältige Erfahrungen im
+            Umgang mit unterschiedlichen Kunden gesammelt und meinen
+            wirtschaftlichen Horizont durch eine Weiterbildung zur geprüften
+            Wirtschaftsfachwirtin erweitert. Diese Qualifikation hat meine
+            Fähigkeit gestärkt, komplexe Zusammenhänge zu verstehen und zu
+            strukturieren. Anschließend habe ich meine IT-Kenntnisse ausgebaut
+            und ein Web-Development-Bootcamp absolviert, um meine Leidenschaft
+            für das Programmieren zu verwirklichen und meiner Kreativität freien
+            lauf zu lassen.
             <br />
             <br />
-            Neben meiner Begeisterung für das digitale Handwerk restauriere ich gerne 
-            alte Möbel und bringe sie mit Liebe zum Detail wieder zum Leben. Hier wie 
-            da ist Geduld gefragt – ob beim Debuggen oder beim Abschleifen von Holz – 
-            und ich genieße die Belohnung, wenn etwas Neues entsteht.
+            Neben meiner Begeisterung für das digitale Handwerk restauriere ich
+            gerne alte Möbel und bringe sie mit Liebe zum Detail wieder zum
+            Leben. Hier wie da ist Geduld gefragt – ob beim Debuggen oder beim
+            Abschleifen von Holz – und ich genieße die Belohnung, wenn etwas
+            Neues entsteht.
             <br />
+            Jetzt möchte ich meine Kreativität, meine Kommunikationsstärke und
+            mein Interesse an der Frontend-Welt vereinen, um benutzerfreundliche
+            und ästhetisch ansprechende Lösungen zu entwickeln. Es begeistert
+            mich, komplexe Ideen in klare, zugängliche Designs umzusetzen und
+            dabei in engem Austausch mit Teams und Nutzer*innen innovative
+            Projekte voranzutreiben.
             <br />
-            HTML, CSS und JavaScript sind mein tägliches Werkzeug, mit dem ich innovative 
-            Lösungen erschaffe und meiner Kreativität freien Lauf lasse. Begleite mich auf 
-            dieser spannenden Reise – ich freue mich darauf, mit dir die nächsten Schritte zu gehen! 
           </p>
         </StyledText>
       </AboutMeContainer>
