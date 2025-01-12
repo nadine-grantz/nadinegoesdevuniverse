@@ -51,6 +51,7 @@ export default function AboutMe() {
             Abschleifen von Holz – und ich genieße die Belohnung, wenn etwas
             Neues entsteht.
             <br />
+            <br />
             Jetzt möchte ich meine Kreativität, meine Kommunikationsstärke und
             mein Interesse an der Frontend-Welt vereinen, um benutzerfreundliche
             und ästhetisch ansprechende Lösungen zu entwickeln. Es begeistert
