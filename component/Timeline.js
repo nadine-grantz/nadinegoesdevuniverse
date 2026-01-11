@@ -15,16 +15,17 @@ import { TargobankIcon } from "../icons/targobank";
 const timelineItems = [
   {
     date: "since Aug. 2024",
-    title: "Productmanager",
+    title: "Product Owner / Product Manager",
     company: "Easycircular Umweltmanagement GmbH",
     location: "Hamburg Wandsbek",
     content:
-      "In meiner aktuellen Rolle unterstütze ich die Weiterentwicklung eines intern entwickelten digitalen Waste Management-Portals. Dabei arbeite ich an der Optimierung und Digitalisierung von Arbeitsprozessen. Zu meinen Aufgaben gehören zudem die Kundenberatung sowie die Erstellung von Abfall- und Wertstoffbilanzen und Zero Waste-Konzepten. Ich arbeite daran, die Kundenzufriedenheit zu steigern und unterstütze die Betreuung von Neu- und Bestandskunden.",
+      "In meiner aktuellen Rolle bin ich verantwortlich für die Weiterentwicklung unseres intern entwickelten digitalen Waste Management-Portals sowie für unseren Easy Recycle Shop, einen Shop für nachhaltige Rücknahmesysteme und Entsorgungslösungen. Ich manage das Product Backlog, priorisiere Features und entwickle gemeinsam mit meinem Team und unseren Kundinnen neue Funktionen und Erweiterungen. Zudem schule ich Mitarbeitende und Kundinnen, sobald neue Funktionen implementiert werden, und sorge dafür, dass beide Plattformen praxisnah und benutzerfreundlich bleiben.",
   },
   {
     date: "Mar. 2024 - Aug. 2024",
     title: "self learning",
-    location: "In den letzten Monaten habe ich die Zeit genutzt, um meine Programmierkenntnisse weiter auszubauen. Ich habe an eigenen Projekten wie der BohnenBar-App und meiner persönlichen Website gearbeitet. Dabei habe ich mich intensiv mit React, Next.js sowie den Basics wie HTML und CSS beschäftigt. Diese Projekte haben mir geholfen, meine Skills in der Webentwicklung zu vertiefen und praktische Erfahrungen zu sammeln.",
+    location:
+      "In den letzten Monaten habe ich die Zeit genutzt, um meine Programmierkenntnisse weiter auszubauen. Ich habe an eigenen Projekten wie der BohnenBar-App und meiner persönlichen Website gearbeitet. Dabei habe ich mich intensiv mit React, Next.js sowie den Basics wie HTML und CSS beschäftigt. Diese Projekte haben mir geholfen, meine Skills in der Webentwicklung zu vertiefen und praktische Erfahrungen zu sammeln.",
   },
   {
     date: "Nov. 2023 - Mar. 2024",
@@ -78,7 +79,7 @@ const timelineItems = [
 ];
 
 const icons = [
-  <Easycircular/>,
+  <Easycircular />,
   <StudyIcon />,
   <NeueFischeIcon />,
   <TargobankIcon />,

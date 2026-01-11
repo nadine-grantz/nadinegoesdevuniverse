@@ -29,35 +29,42 @@ export default function AboutMe() {
       <AboutMeContainer>
         <StyledText>
           <p>
-            Hallo, schön dass du vorbei schaust! Ich starte ein neues Kapitel
-            und tausche nach über einem Jahrzehnt im Vertrieb im Bankensektor
-            Anzug gegen Kreativität.
+            Hallo und schön, dass du hier bist!
             <br />
             <br />
-            Während meiner Zeit im Bankwesen habe ich vielfältige Erfahrungen im
-            Umgang mit unterschiedlichen Kunden gesammelt und meinen
-            wirtschaftlichen Horizont durch eine Weiterbildung zur geprüften
-            Wirtschaftsfachwirtin erweitert. Diese Qualifikation hat meine
-            Fähigkeit gestärkt, komplexe Zusammenhänge zu verstehen und zu
-            strukturieren. Anschließend habe ich meine IT-Kenntnisse ausgebaut
-            und ein Web-Development-Bootcamp absolviert, um meine Leidenschaft
-            für das Programmieren zu verwirklichen und meiner Kreativität freien
-            lauf zu lassen.
+            Nach über einem Jahrzehnt im Bankvertrieb habe ich den Anzug gegen
+            digitale Projekte eingetauscht und arbeite heute als Product Owner,
+            um Ideen in funktionierende und nutzerfreundliche Produkte zu
+            verwandeln.
             <br />
             <br />
-            Neben meiner Begeisterung für das digitale Handwerk restauriere ich
-            gerne alte Möbel und bringe sie mit Liebe zum Detail wieder zum
-            Leben. Hier wie da ist Geduld gefragt – ob beim Debuggen oder beim
-            Abschleifen von Holz – und ich genieße die Belohnung, wenn etwas
-            Neues entsteht.
+            Meine Zeit im Bankwesen hat mir gezeigt, wie wichtig klare
+            Kommunikation und strukturiertes Arbeiten sind. Gleichzeitig habe
+            ich mich stetig weitergebildet unter anderem zur geprüften
+            Wirtschaftsfachwirtin und so meine Fähigkeit gestärkt, komplexe
+            Zusammenhänge zu verstehen und klar zu kommunizieren. Anschließend
+            habe ich meine IT-Kenntnisse erweitert und ein
+            Web-Development-Bootcamp absolviert, um meine Leidenschaft für
+            digitale Lösungen gezielt einzusetzen.
             <br />
             <br />
-            Jetzt möchte ich meine Kreativität, meine Kommunikationsstärke und
-            mein Interesse an der Frontend-Welt vereinen, um benutzerfreundliche
-            und ästhetisch ansprechende Lösungen zu entwickeln. Es begeistert
-            mich, komplexe Ideen in klare, zugängliche Designs umzusetzen und
-            dabei in engem Austausch mit Teams und Nutzer*innen innovative
-            Projekte voranzutreiben.
+            Als Product Owner ist es mir wichtig, Teams gut zu begleiten,
+            Anforderungen klar zu priorisieren und Produkte zu entwickeln, die
+            wirklich einen Unterschied machen. Mit meiner Kreativität, meiner
+            strukturierten Arbeitsweise und meiner Kommunikationsstärke sorge
+            ich dafür, dass Projekte erfolgreich vorankommen und Lösungen
+            entstehen, die Nutzer*innen, Support und Vertrieb gleichermaßen
+            begeistern.
+            <br />
+            <br />
+            Neben meiner Begeisterung für digitale Produkte liebe ich es, alte
+            Möbel zu restaurieren – manchmal inklusive kreativer
+            Transportlösungen, wie Sessel in der U-Bahn oder Schränke auf der
+            Sackkarre durch den Park. Dabei sind Geduld, Präzision und ein Auge
+            für Details gefragt – ganz ähnlich wie beim Beheben von Bugs in der
+            Software. Außerdem packt mich oft das Fernweh: Ich reise gerne in
+            andere Länder, entdecke neue Kulturen und lasse mich von ihnen
+            inspirieren.
             <br />
           </p>
         </StyledText>
