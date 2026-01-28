@@ -52,6 +52,7 @@ const StyledImage = styled.img`
   height: 200px;
   margin-top: 2em;
   border-radius: 50%;
+  object-fit: cover;
 `;
 
 export default function Home() {
